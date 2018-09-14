@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1885" started-at="2018-09-14T17:50:40Z" finished-at="2018-09-14T17:50:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1885" started-at="2018-09-14T17:50:40Z" finished-at="2018-09-14T17:50:42Z">
+      <class name="maxmin_ed2.Main">
+        <test-method status="PASS" signature="min1()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min1" duration-ms="47" started-at="2018-09-14T17:50:40Z" finished-at="2018-09-14T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1 -->
+        <test-method status="PASS" signature="min1()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min1" duration-ms="47" started-at="2018-09-14T17:50:40Z" finished-at="2018-09-14T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1 -->
+        <test-method status="PASS" signature="min1()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min1" duration-ms="31" started-at="2018-09-14T17:50:40Z" finished-at="2018-09-14T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1 -->
+        <test-method status="PASS" signature="min1()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min1" duration-ms="47" started-at="2018-09-14T17:50:40Z" finished-at="2018-09-14T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1 -->
+        <test-method status="PASS" signature="min1()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min1" duration-ms="31" started-at="2018-09-14T17:50:40Z" finished-at="2018-09-14T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1 -->
+        <test-method status="PASS" signature="min2()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min2" duration-ms="47" started-at="2018-09-14T17:50:40Z" depends-on-methods="maxmin_ed2.Main.min1" finished-at="2018-09-14T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2 -->
+        <test-method status="PASS" signature="min2()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min2" duration-ms="47" started-at="2018-09-14T17:50:40Z" depends-on-methods="maxmin_ed2.Main.min1" finished-at="2018-09-14T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2 -->
+        <test-method status="PASS" signature="min2()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min2" duration-ms="47" started-at="2018-09-14T17:50:40Z" depends-on-methods="maxmin_ed2.Main.min1" finished-at="2018-09-14T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2 -->
+        <test-method status="PASS" signature="min2()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min2" duration-ms="31" started-at="2018-09-14T17:50:40Z" depends-on-methods="maxmin_ed2.Main.min1" finished-at="2018-09-14T17:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2 -->
+        <test-method status="PASS" signature="min2()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min2" duration-ms="47" started-at="2018-09-14T17:50:40Z" depends-on-methods="maxmin_ed2.Main.min1" finished-at="2018-09-14T17:50:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2 -->
+        <test-method status="PASS" signature="min3()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min3" duration-ms="297" started-at="2018-09-14T17:50:41Z" depends-on-methods="maxmin_ed2.Main.min2" finished-at="2018-09-14T17:50:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3 -->
+        <test-method status="PASS" signature="min3()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min3" duration-ms="300" started-at="2018-09-14T17:50:41Z" depends-on-methods="maxmin_ed2.Main.min2" finished-at="2018-09-14T17:50:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3 -->
+        <test-method status="PASS" signature="min3()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min3" duration-ms="291" started-at="2018-09-14T17:50:41Z" depends-on-methods="maxmin_ed2.Main.min2" finished-at="2018-09-14T17:50:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3 -->
+        <test-method status="PASS" signature="min3()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min3" duration-ms="268" started-at="2018-09-14T17:50:41Z" depends-on-methods="maxmin_ed2.Main.min2" finished-at="2018-09-14T17:50:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3 -->
+        <test-method status="PASS" signature="min3()[pri:0, instance:maxmin_ed2.Main@353d0772]" name="min3" duration-ms="281" started-at="2018-09-14T17:50:42Z" depends-on-methods="maxmin_ed2.Main.min2" finished-at="2018-09-14T17:50:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3 -->
+      </class> <!-- maxmin_ed2.Main -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
