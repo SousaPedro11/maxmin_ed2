@@ -1,2 +1,2 @@
 # maxmin_ed2
-ImplementaÃ§Ã£o dos algoritmos MaxMin e Gulosos da disciplina Estrutura de Dados II
+Implementação dos algoritmos MaxMin e Gulosos da disciplina Estrutura de Dados II
