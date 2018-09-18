@@ -40,7 +40,7 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 6. Agora devemos testar se funcionou.
 7. Pressione Win(janelinha)+R , digite cmd e aperte enter para abrir o Prompt.
 8. No CMD digite java -version e aperte enter.
-9. Se o ambiente foi configurado com sucesso, aparecerá: Openjdk Version, Openjdk Runtime Eniroment e Openjdk Server VM.
+9. Se o ambiente foi configurado com sucesso, aparecerá: Openjdk Version, Openjdk Runtime Enviroment e Openjdk Server VM.
 
 
 ## LINKS EXTERNOS
