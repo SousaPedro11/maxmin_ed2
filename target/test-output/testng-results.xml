@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31" started-at="2018-09-18T14:40:18Z" finished-at="2018-09-18T14:40:18Z">
+  <suite name="Default suite" duration-ms="32" started-at="2018-09-18T16:24:47Z" finished-at="2018-09-18T16:24:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31" started-at="2018-09-18T14:40:18Z" finished-at="2018-09-18T14:40:18Z">
-      <class name="maxmin_ed2.TesteGuloso">
-        <test-method status="PASS" signature="pagamentoInteiroMaior()[pri:0, instance:maxmin_ed2.TesteGuloso@4590c9c3]" name="pagamentoInteiroMaior" duration-ms="0" started-at="2018-09-18T14:40:18Z" finished-at="2018-09-18T14:40:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pagamentoInteiroMaior -->
-        <test-method status="PASS" signature="pagamentoFracionadoMaior()[pri:0, instance:maxmin_ed2.TesteGuloso@4590c9c3]" name="pagamentoFracionadoMaior" duration-ms="0" started-at="2018-09-18T14:40:18Z" depends-on-methods="maxmin_ed2.TesteGuloso.pagamentoInteiroMaior" finished-at="2018-09-18T14:40:18Z">
+    <test name="Default test" duration-ms="32" started-at="2018-09-18T16:24:47Z" finished-at="2018-09-18T16:24:47Z">
+      <class name="test.TesteGuloso">
+        <test-method status="PASS" signature="pagamentoFracionadoMaior()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoFracionadoMaior" duration-ms="0" started-at="2018-09-18T16:24:47Z" depends-on-methods="test.TesteGuloso.pagamentoInteiroMaior" finished-at="2018-09-18T16:24:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pagamentoFracionadoMaior -->
-        <test-method status="PASS" signature="pagamentoIgual()[pri:0, instance:maxmin_ed2.TesteGuloso@4590c9c3]" name="pagamentoIgual" duration-ms="0" started-at="2018-09-18T14:40:18Z" depends-on-methods="maxmin_ed2.TesteGuloso.pagamentoFracionadoMaior" finished-at="2018-09-18T14:40:18Z">
+        <test-method status="PASS" signature="pagamentoInteiroMaior()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoInteiroMaior" duration-ms="0" started-at="2018-09-18T16:24:47Z" finished-at="2018-09-18T16:24:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pagamentoIgual -->
-        <test-method status="PASS" signature="pagamentoMenor()[pri:0, instance:maxmin_ed2.TesteGuloso@4590c9c3]" name="pagamentoMenor" duration-ms="0" started-at="2018-09-18T14:40:18Z" depends-on-methods="maxmin_ed2.TesteGuloso.pagamentoIgual" finished-at="2018-09-18T14:40:18Z">
+        </test-method> <!-- pagamentoInteiroMaior -->
+        <test-method status="PASS" signature="pagamentoMenor()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoMenor" duration-ms="0" started-at="2018-09-18T16:24:47Z" depends-on-methods="test.TesteGuloso.pagamentoIgual" finished-at="2018-09-18T16:24:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pagamentoMenor -->
-      </class> <!-- maxmin_ed2.TesteGuloso -->
+        <test-method status="PASS" signature="pagamentoFracionadoMaior1()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoFracionadoMaior1" duration-ms="0" started-at="2018-09-18T16:24:47Z" depends-on-methods="test.TesteGuloso.pagamentoInteiroMaior" finished-at="2018-09-18T16:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagamentoFracionadoMaior1 -->
+        <test-method status="PASS" signature="pagamentoIgual()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoIgual" duration-ms="0" started-at="2018-09-18T16:24:47Z" depends-on-methods="test.TesteGuloso.pagamentoFracionadoMaior" finished-at="2018-09-18T16:24:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagamentoIgual -->
+      </class> <!-- test.TesteGuloso -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

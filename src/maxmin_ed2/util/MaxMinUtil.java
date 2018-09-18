@@ -1,4 +1,4 @@
-package maxmin_ed2;
+package maxmin_ed2.util;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -13,9 +13,9 @@ public class MaxMinUtil {
      *
      * @return int[] array
      */
-    public static int[] arrayRandomico(final int tam) {
+    public static Integer[] arrayRandomico(final int tam) {
 
-        final int array[] = new int[tam];
+        final Integer[] array = new Integer[tam];
 
         final Random rand = new Random();
         final int max = 999999;

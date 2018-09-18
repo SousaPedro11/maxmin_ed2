@@ -1,4 +1,4 @@
-package maxmin_ed2;
+package maxmin_ed2.implementation;
 
 public final class MaxMinImpl {
 
@@ -18,7 +18,7 @@ public final class MaxMinImpl {
      *
      * @param vetor
      */
-    public static void maxMin1(final int[] vetor) {
+    public static void maxMin1(final Integer[] vetor) {
 
         // inicia o contador de tempo
         final long tempoInicial = System.currentTimeMillis();
@@ -59,7 +59,7 @@ public final class MaxMinImpl {
      *
      * @param vetor
      */
-    public static void maxMin2(final int[] vetor) {
+    public static void maxMin2(final Integer[] vetor) {
 
         // inicia o contador de tempo
         final long tempoInicial = System.currentTimeMillis();
@@ -100,7 +100,7 @@ public final class MaxMinImpl {
      *
      * @param vetor
      */
-    public static void maxMin3(final int[] vetor) {
+    public static void maxMin3(final Integer[] vetor) {
 
         // inicia o contador de tempo
         final long tempoInicial = System.currentTimeMillis();

@@ -1,6 +1,8 @@
-package maxmin_ed2;
+package test;
 
 import org.testng.annotations.Test;
+
+import maxmin_ed2.implementation.GulosoImpl;
 
 public class TesteGuloso {
 
@@ -22,9 +24,19 @@ public class TesteGuloso {
     private void pagamentoFracionadoMaior() {
 
         this.valorConta = 100.62;
-        this.valorPago = 105.35;
+        this.valorPago = 101.65;
 
         System.out.println("\n2 - Teste pagamentoFracionadoMaior");
+        System.out.println(GulosoImpl.calculaTroco(this.valorConta, this.valorPago));
+    }
+
+    @Test(dependsOnMethods = "pagamentoInteiroMaior")
+    private void pagamentoFracionadoMaior1() {
+
+        this.valorConta = 100.62;
+        this.valorPago = 109.40;
+
+        System.out.println("\n2 - Teste pagamentoFracionadoMaior1");
         System.out.println(GulosoImpl.calculaTroco(this.valorConta, this.valorPago));
     }
 

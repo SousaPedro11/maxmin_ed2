@@ -1,15 +1,18 @@
-package maxmin_ed2;
+package test;
 
 import org.testng.annotations.Test;
+
+import maxmin_ed2.implementation.MaxMinImpl;
+import maxmin_ed2.util.MaxMinUtil;
 
 public class TesteMaxMin {
 
     static final int REPETICAO = 5;
 
     // Define o tamanho do vetor
-    final int tam = 90000000;
+    final Integer tam = 50000000;
 
-    final int[] vetor = MaxMinUtil.arrayRandomico(this.tam);
+    final Integer[] vetor = MaxMinUtil.arrayRandomico(this.tam);
 
     @Test(invocationCount = TesteMaxMin.REPETICAO)
     public void min1() {

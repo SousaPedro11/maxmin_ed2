@@ -1,16 +1,8 @@
-package maxmin_ed2;
+package maxmin_ed2.implementation;
 
 import java.text.DecimalFormat;
 
 public final class GulosoImpl {
-
-    // private static double troco;
-    //
-    // private static int i;
-    //
-    // private static int valor;
-    //
-    // private static int quantidade;
 
     private static String nomeMoeda;
 
@@ -25,9 +17,11 @@ public final class GulosoImpl {
      *
      * @param valorConta
      * @param valorPago
-     * @return
+     * @return String resultado
      */
     public static String calculaTroco(final double valorConta, final double valorPago) {
+
+        String resultado;
 
         GulosoImpl.result = new StringBuilder();
         final DecimalFormat formatador = new DecimalFormat("###,##0.00");
@@ -41,54 +35,68 @@ public final class GulosoImpl {
         if (valorPago < valorConta) {
             GulosoImpl.result.append("Pagamento insuficiente! Faltam R$").append(formatador.format(valorConta - valorPago)).append("\n");
 
-            return (GulosoImpl.result.toString());
+            resultado = GulosoImpl.result.toString();
 
         } else if (valorPago == valorConta) {
             GulosoImpl.result.append("Não há troco!").append("\n");
 
-            return GulosoImpl.result.toString();
+            resultado = GulosoImpl.result.toString();
 
         } else {
-            final int cedula[] = { 100, 50, 20, 10, 5, 2, 1 };
+            final int cedula[] = { 100, 50, 20, 10, 5, 2, 1 };// de 1 presente apenas para fins de cálculo
+
             final int moeda[] = { 50, 25, 10, 5, 1 };
-            double troco;
+
+            final double troco = valorPago - valorConta;
+
             int valor;
-            troco = valorPago - valorConta;
+
             GulosoImpl.result.append("Troco = R$").append(formatador.format(troco)).append("\n\n");
 
             // calcula a quantidade de cédulas
             valor = (int) troco;
 
-            GulosoImpl.nomeMoeda = "cedula";
+            GulosoImpl.nomeMoeda = "cédula";
 
             GulosoImpl.calculaQuantidade(valor, cedula);
 
-            // calcula a quantidade de moedas
+            // calcula parte fracionaria
             valor = (int) Math.round((troco - (int) troco) * 100);
 
+            // calcula a quantidade de moedas
             GulosoImpl.nomeMoeda = "moeda";
 
             GulosoImpl.calculaQuantidade(valor, moeda);
 
-            return (GulosoImpl.result.toString());
+            resultado = GulosoImpl.result.toString();
         }
+        return resultado;
     }
 
+    /**
+     * Calcula a quantidade de cédulas e/ou moedas do troco
+     *
+     * @param valor
+     * @param tipoMoeda
+     */
     private static void calculaQuantidade(int valor, final int[] tipoMoeda) {
 
         int quantidade = 0;
         int i = 0;
-        // GulosoImpl.result.append("\n").append(GulosoImpl.nomeMoeda.toUpperCase()).append("\n");
 
         while (valor != 0) {
-            quantidade = valor / tipoMoeda[i]; // calculando a qtde de notas
+            quantidade = valor / tipoMoeda[i]; // calcula a quantidade de cedulas/moedas
             if (quantidade != 0) {
-                GulosoImpl.result.append(quantidade).append(" ").append(GulosoImpl.nomeMoeda);
+                if (valor != 1) {
+                    GulosoImpl.result.append(quantidade).append(" ").append(GulosoImpl.nomeMoeda);
+                } else {
+                    GulosoImpl.result.append(quantidade).append(" ").append("moeda");
+                }
                 if (quantidade > 1) {
                     GulosoImpl.result.append("s");
                 }
 
-                if (GulosoImpl.nomeMoeda.equalsIgnoreCase("cedula")) {
+                if (!GulosoImpl.nomeMoeda.equalsIgnoreCase("moeda")) {
 
                     GulosoImpl.result.append(" de R$");
                     GulosoImpl.result.append(tipoMoeda[i]).append("\n");
@@ -96,15 +104,18 @@ public final class GulosoImpl {
 
                     GulosoImpl.result.append(" de ");
                     GulosoImpl.result.append(tipoMoeda[i]).append(" centavo");
+
                     if (tipoMoeda[i] > 1) {
+
                         GulosoImpl.result.append("s");
                     }
+
                     GulosoImpl.result.append("\n");
                 }
 
-                valor = valor % tipoMoeda[i]; // sobra
+                valor = valor % tipoMoeda[i]; // resto
             }
-            i = i + 1; // próxima nota
+            i = i + 1; // próxima cedula/moeda
         }
     }
 }
