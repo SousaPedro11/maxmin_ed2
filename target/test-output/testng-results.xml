@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32" started-at="2018-09-18T16:24:47Z" finished-at="2018-09-18T16:24:47Z">
+  <suite name="Default suite" duration-ms="32" started-at="2018-09-18T16:41:27Z" finished-at="2018-09-18T16:41:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32" started-at="2018-09-18T16:24:47Z" finished-at="2018-09-18T16:24:47Z">
+    <test name="Default test" duration-ms="32" started-at="2018-09-18T16:41:27Z" finished-at="2018-09-18T16:41:27Z">
       <class name="test.TesteGuloso">
-        <test-method status="PASS" signature="pagamentoFracionadoMaior()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoFracionadoMaior" duration-ms="0" started-at="2018-09-18T16:24:47Z" depends-on-methods="test.TesteGuloso.pagamentoInteiroMaior" finished-at="2018-09-18T16:24:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pagamentoFracionadoMaior -->
-        <test-method status="PASS" signature="pagamentoInteiroMaior()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoInteiroMaior" duration-ms="0" started-at="2018-09-18T16:24:47Z" finished-at="2018-09-18T16:24:47Z">
+        <test-method status="PASS" signature="pagamentoInteiroMaior()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoInteiroMaior" duration-ms="16" started-at="2018-09-18T16:41:27Z" finished-at="2018-09-18T16:41:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pagamentoInteiroMaior -->
-        <test-method status="PASS" signature="pagamentoMenor()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoMenor" duration-ms="0" started-at="2018-09-18T16:24:47Z" depends-on-methods="test.TesteGuloso.pagamentoIgual" finished-at="2018-09-18T16:24:47Z">
+        <test-method status="PASS" signature="pagamentoFracionadoMaior()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoFracionadoMaior" duration-ms="0" started-at="2018-09-18T16:41:27Z" depends-on-methods="test.TesteGuloso.pagamentoInteiroMaior" finished-at="2018-09-18T16:41:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pagamentoFracionadoMaior -->
+        <test-method status="PASS" signature="pagamentoMenor()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoMenor" duration-ms="0" started-at="2018-09-18T16:41:27Z" depends-on-methods="test.TesteGuloso.pagamentoIgual" finished-at="2018-09-18T16:41:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pagamentoMenor -->
-        <test-method status="PASS" signature="pagamentoFracionadoMaior1()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoFracionadoMaior1" duration-ms="0" started-at="2018-09-18T16:24:47Z" depends-on-methods="test.TesteGuloso.pagamentoInteiroMaior" finished-at="2018-09-18T16:24:47Z">
+        <test-method status="PASS" signature="pagamentoFracionadoMaior1()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoFracionadoMaior1" duration-ms="0" started-at="2018-09-18T16:41:27Z" depends-on-methods="test.TesteGuloso.pagamentoInteiroMaior" finished-at="2018-09-18T16:41:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pagamentoFracionadoMaior1 -->
-        <test-method status="PASS" signature="pagamentoIgual()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoIgual" duration-ms="0" started-at="2018-09-18T16:24:47Z" depends-on-methods="test.TesteGuloso.pagamentoFracionadoMaior" finished-at="2018-09-18T16:24:47Z">
+        <test-method status="PASS" signature="pagamentoIgual()[pri:0, instance:test.TesteGuloso@4590c9c3]" name="pagamentoIgual" duration-ms="0" started-at="2018-09-18T16:41:27Z" depends-on-methods="test.TesteGuloso.pagamentoFracionadoMaior" finished-at="2018-09-18T16:41:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pagamentoIgual -->

@@ -24,7 +24,7 @@ public class TesteGuloso {
     private void pagamentoFracionadoMaior() {
 
         this.valorConta = 100.62;
-        this.valorPago = 101.65;
+        this.valorPago = 103.65;
 
         System.out.println("\n2 - Teste pagamentoFracionadoMaior");
         System.out.println(GulosoImpl.calculaTroco(this.valorConta, this.valorPago));
@@ -34,7 +34,7 @@ public class TesteGuloso {
     private void pagamentoFracionadoMaior1() {
 
         this.valorConta = 100.62;
-        this.valorPago = 109.40;
+        this.valorPago = 199.40;
 
         System.out.println("\n2 - Teste pagamentoFracionadoMaior1");
         System.out.println(GulosoImpl.calculaTroco(this.valorConta, this.valorPago));
