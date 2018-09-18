@@ -1,8 +1,8 @@
 package maxmin_ed2;
 
-public final class ImplementaMaxMin {
+public final class MaxMinImpl {
 
-    private ImplementaMaxMin() {
+    private MaxMinImpl() {
 
     }
 
