@@ -2,9 +2,9 @@ package test;
 
 import org.testng.annotations.Test;
 
-import maxmin_ed2.implementation.GulosoImpl;
+import maxmin_ed2.implementation.GulosoTrocoImpl;
 
-public class TesteGuloso {
+public class TesteGulosoTroco {
 
     double valorConta;
 
@@ -17,7 +17,7 @@ public class TesteGuloso {
         this.valorPago = 105;
 
         System.out.println("1 - Teste pagamentoInteiroMaior");
-        System.out.println(GulosoImpl.calculaTroco(this.valorConta, this.valorPago));
+        System.out.println(GulosoTrocoImpl.calculaTroco(this.valorConta, this.valorPago));
     }
 
     @Test(dependsOnMethods = "pagamentoInteiroMaior")
@@ -27,7 +27,7 @@ public class TesteGuloso {
         this.valorPago = 103.65;
 
         System.out.println("\n2 - Teste pagamentoFracionadoMaior");
-        System.out.println(GulosoImpl.calculaTroco(this.valorConta, this.valorPago));
+        System.out.println(GulosoTrocoImpl.calculaTroco(this.valorConta, this.valorPago));
     }
 
     @Test(dependsOnMethods = "pagamentoInteiroMaior")
@@ -37,7 +37,7 @@ public class TesteGuloso {
         this.valorPago = 199.40;
 
         System.out.println("\n2 - Teste pagamentoFracionadoMaior1");
-        System.out.println(GulosoImpl.calculaTroco(this.valorConta, this.valorPago));
+        System.out.println(GulosoTrocoImpl.calculaTroco(this.valorConta, this.valorPago));
     }
 
     @Test(dependsOnMethods = "pagamentoFracionadoMaior")
@@ -47,7 +47,7 @@ public class TesteGuloso {
         this.valorPago = 100.35;
 
         System.out.println("\n3 - Teste pagamentoIgual");
-        System.out.println(GulosoImpl.calculaTroco(this.valorConta, this.valorPago));
+        System.out.println(GulosoTrocoImpl.calculaTroco(this.valorConta, this.valorPago));
     }
 
     @Test(dependsOnMethods = "pagamentoIgual")
@@ -57,6 +57,6 @@ public class TesteGuloso {
         this.valorPago = 92;
 
         System.out.println("\n4 - Teste pagamentoMenor");
-        System.out.println(GulosoImpl.calculaTroco(this.valorConta, this.valorPago));
+        System.out.println(GulosoTrocoImpl.calculaTroco(this.valorConta, this.valorPago));
     }
 }
