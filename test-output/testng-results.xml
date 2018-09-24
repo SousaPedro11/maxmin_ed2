@@ -1,73 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-09-15T06:16:38Z" name="Default suite" finished-at="2018-09-15T06:16:41Z" duration-ms="2829">
+  <suite name="Default suite" duration-ms="50" started-at="2018-09-24T16:27:55Z" finished-at="2018-09-24T16:27:55Z">
     <groups>
     </groups>
-    <test started-at="2018-09-15T06:16:38Z" name="Default test" finished-at="2018-09-15T06:16:41Z" duration-ms="2829">
-      <class name="maxmin_ed2.Main">
-        <test-method signature="min1()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:38Z" name="min1" finished-at="2018-09-15T06:16:38Z" duration-ms="127" status="PASS">
+    <test name="Default test" duration-ms="50" started-at="2018-09-24T16:27:55Z" finished-at="2018-09-24T16:27:55Z">
+      <class name="test.TesteGulosoTroco">
+        <test-method status="PASS" signature="pagamentoInteiroMaior()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoInteiroMaior" duration-ms="13" started-at="2018-09-24T16:27:55Z" finished-at="2018-09-24T16:27:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- min1 -->
-        <test-method signature="min1()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:38Z" name="min1" finished-at="2018-09-15T06:16:38Z" duration-ms="130" status="PASS">
+        </test-method> <!-- pagamentoInteiroMaior -->
+        <test-method status="PASS" signature="pagamentoFracionadoMaior()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoFracionadoMaior" duration-ms="2" started-at="2018-09-24T16:27:55Z" depends-on-methods="test.TesteGulosoTroco.pagamentoInteiroMaior" finished-at="2018-09-24T16:27:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- min1 -->
-        <test-method signature="min1()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:38Z" name="min1" finished-at="2018-09-15T06:16:38Z" duration-ms="86" status="PASS">
+        </test-method> <!-- pagamentoFracionadoMaior -->
+        <test-method status="PASS" signature="pagamentoFracionadoMaior1()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoFracionadoMaior1" duration-ms="1" started-at="2018-09-24T16:27:55Z" depends-on-methods="test.TesteGulosoTroco.pagamentoInteiroMaior" finished-at="2018-09-24T16:27:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- min1 -->
-        <test-method signature="min1()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:38Z" name="min1" finished-at="2018-09-15T06:16:38Z" duration-ms="82" status="PASS">
+        </test-method> <!-- pagamentoFracionadoMaior1 -->
+        <test-method status="PASS" signature="pagamentoIgual()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoIgual" duration-ms="2" started-at="2018-09-24T16:27:55Z" depends-on-methods="test.TesteGulosoTroco.pagamentoFracionadoMaior" finished-at="2018-09-24T16:27:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- min1 -->
-        <test-method signature="min1()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:38Z" name="min1" finished-at="2018-09-15T06:16:38Z" duration-ms="76" status="PASS">
+        </test-method> <!-- pagamentoIgual -->
+        <test-method status="PASS" signature="pagamentoMenor()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoMenor" duration-ms="3" started-at="2018-09-24T16:27:55Z" depends-on-methods="test.TesteGulosoTroco.pagamentoIgual" finished-at="2018-09-24T16:27:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- min1 -->
-        <test-method signature="min2()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:38Z" name="min2" finished-at="2018-09-15T06:16:38Z" depends-on-methods="maxmin_ed2.Main.min1" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-        <test-method signature="min2()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:38Z" name="min2" finished-at="2018-09-15T06:16:39Z" depends-on-methods="maxmin_ed2.Main.min1" duration-ms="116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-        <test-method signature="min2()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:39Z" name="min2" finished-at="2018-09-15T06:16:39Z" depends-on-methods="maxmin_ed2.Main.min1" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-        <test-method signature="min2()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:39Z" name="min2" finished-at="2018-09-15T06:16:39Z" depends-on-methods="maxmin_ed2.Main.min1" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-        <test-method signature="min2()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:39Z" name="min2" finished-at="2018-09-15T06:16:39Z" depends-on-methods="maxmin_ed2.Main.min1" duration-ms="90" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-        <test-method signature="min3()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:39Z" name="min3" finished-at="2018-09-15T06:16:39Z" depends-on-methods="maxmin_ed2.Main.min2" duration-ms="397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-        <test-method signature="min3()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:39Z" name="min3" finished-at="2018-09-15T06:16:40Z" depends-on-methods="maxmin_ed2.Main.min2" duration-ms="382" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-        <test-method signature="min3()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:40Z" name="min3" finished-at="2018-09-15T06:16:40Z" depends-on-methods="maxmin_ed2.Main.min2" duration-ms="328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-        <test-method signature="min3()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:40Z" name="min3" finished-at="2018-09-15T06:16:40Z" depends-on-methods="maxmin_ed2.Main.min2" duration-ms="339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-        <test-method signature="min3()[pri:0, instance:maxmin_ed2.Main@247bddad]" started-at="2018-09-15T06:16:40Z" name="min3" finished-at="2018-09-15T06:16:41Z" depends-on-methods="maxmin_ed2.Main.min2" duration-ms="350" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-      </class> <!-- maxmin_ed2.Main -->
+        </test-method> <!-- pagamentoMenor -->
+      </class> <!-- test.TesteGulosoTroco -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
