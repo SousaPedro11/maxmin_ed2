@@ -6,7 +6,11 @@ import java.util.Random;
 import javax.swing.JPanel;
 
 public class Pontos extends JPanel {
-    private int[][] coordenadas;// guardar as coordenadas x e y de cada ponto 
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int[][] coordenadas;// guardar as coordenadas x e y de cada ponto 
     private double[][] custos;// objetivo mostrar a distancia de uma cidade para qualquer outro cidade
     private int vertices;
     private int largura;

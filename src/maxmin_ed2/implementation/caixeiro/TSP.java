@@ -2,7 +2,7 @@ package maxmin_ed2.implementation.caixeiro;
 
 import javax.swing.JFrame;
 
-public class Caixeiro2017 {
+public class TSP {
 
     public static void main(String[] args) {
        Pontos p = new Pontos(4,640,480);
