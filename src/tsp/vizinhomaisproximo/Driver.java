@@ -22,7 +22,7 @@ public class Driver {
     private void imprimeMenoresRotas(final Rota menorRota) {
 
         System.out.println(Utilitario.printaSeparador());
-        System.out.println("Caminho mais curto até agora: " + menorRota);
+        System.out.println("Caminho mais curto até agora: " + VizinhoMaisProximo.menorRota);
         System.out.println("Distancia total: " + String.format("%.3f", menorRota.calculaDistanciaTotal()) + " Km");
     }
 
@@ -31,6 +31,6 @@ public class Driver {
         final Driver driver = new Driver();
         final ArrayList<Cidade> cidades = new ArrayList<>();
         cidades.addAll(driver.cidadesIniciais);
-        driver.imprimeMenoresRotas(new VizinhoMaisProximo().encontraMenorRota(cidades));
+        driver.imprimeMenoresRotas(new VizinhoMaisProximo().encontraMenorRota(cidades, null));
     }
 }

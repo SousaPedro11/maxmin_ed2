@@ -7,22 +7,47 @@ import tsp.vizinhomaisproximo.util.Utilitario;
 
 public class VizinhoMaisProximo {
 
-    public Rota encontraMenorRota(final ArrayList<Cidade> cidades) {
+    public static Cidade cidadeinicial = null;
 
-        final ArrayList<Cidade> cidadesMenorRota = new ArrayList<>(cidades.size());
+    public static Cidade cidadefinal = null;
+
+    public static final ArrayList<Cidade> menorRota = new ArrayList<>();
+
+    @SuppressWarnings("unchecked")
+    public Rota encontraMenorRota(final ArrayList<Cidade> cidadesIniciais, final Cidade input) {
+
+        final ArrayList<Cidade> cidades = (ArrayList<Cidade>) cidadesIniciais.clone();
+
+        final ArrayList<Cidade> cidadesMenorRota = new ArrayList<>();
         final String separador = Utilitario.printaSeparador();
+        Cidade cidade = null;
+
+        if (input == null) {
+            VizinhoMaisProximo.cidadeinicial = cidades.get((int) (cidades.size() * Math.random()));
+        } else {
+            VizinhoMaisProximo.cidadeinicial = input;
+        }
         System.out.println(separador);
         System.out.println("Rota inicial        ==> " + Arrays.toString(cidades.toArray()));
-        System.out.println("Distancia total : " + String.format("%.3f", new Rota(cidades).calculaDistanciaTotal()) + " Km");
+        System.out.println("Distancia total : " + String.format("%.3f", new Rota(cidades).calculaDistanciaInicial()) + " Km");
         System.out.println(separador);
 
-        Cidade cidade = cidades.get((int) (cidades.size() * Math.random()));
+        cidade = VizinhoMaisProximo.cidadeinicial;
         this.atualizaRotas(cidadesMenorRota, cidades, cidade);
 
         while (cidades.size() >= 1) {
             cidade = this.proximaCidade(cidades, cidade);
             this.atualizaRotas(cidadesMenorRota, cidades, cidade);
         }
+
+        // this.atualizaRotas(cidadesMenorRota, cidades, VizinhoMaisProximo.cidadeinicial);
+        // cidadesMenorRota.add(VizinhoMaisProximo.cidadeinicial);
+        VizinhoMaisProximo.menorRota.clear();
+        VizinhoMaisProximo.menorRota.addAll(cidadesMenorRota);
+        VizinhoMaisProximo.menorRota.add(VizinhoMaisProximo.cidadeinicial);
+        System.out.println("Cidades na menor rota ==> " + Arrays.toString(VizinhoMaisProximo.menorRota.toArray()));
+
+        VizinhoMaisProximo.cidadefinal = cidade;
         return new Rota(cidadesMenorRota);
     }
 
