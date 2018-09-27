@@ -28,8 +28,8 @@ public class VizinhoMaisProximo {
             VizinhoMaisProximo.cidadeinicial = input;
         }
         System.out.println(separador);
-        System.out.println("Rota inicial        ==> " + Arrays.toString(cidades.toArray()));
-        System.out.println("Distancia total : " + String.format("%.3f", new Rota(cidades).calculaDistanciaInicial()) + " Km");
+        System.out.println("Lista de cidades:     ==> " + Arrays.toString(cidades.toArray()));
+        System.out.println("Distancia total nesse percurso : " + String.format("%.3f", new Rota(cidades).calculaDistanciaInicial()) + " Km");
         System.out.println(separador);
 
         cidade = VizinhoMaisProximo.cidadeinicial;

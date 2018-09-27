@@ -6,6 +6,7 @@
       <class name="test.TesteVizinhoProximo">
         <methods>
           <include name="rotaBelém"/>
+          <include name="TSPMenorRota"/>
         </methods>
       </class> <!-- test.TesteVizinhoProximo -->
     </classes>

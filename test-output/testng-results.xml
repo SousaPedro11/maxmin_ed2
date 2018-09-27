@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="80" started-at="2018-09-26T17:42:11Z" finished-at="2018-09-26T17:42:11Z">
+  <suite name="Default suite" duration-ms="78" started-at="2018-09-27T22:40:31Z" finished-at="2018-09-27T22:40:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="80" started-at="2018-09-26T17:42:11Z" finished-at="2018-09-26T17:42:11Z">
+    <test name="Default test" duration-ms="78" started-at="2018-09-27T22:40:31Z" finished-at="2018-09-27T22:40:31Z">
       <class name="test.TesteVizinhoProximo">
-        <test-method status="PASS" signature="TSPMenorRota()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="TSPMenorRota" duration-ms="56" started-at="2018-09-26T17:42:11Z" finished-at="2018-09-26T17:42:11Z">
+        <test-method status="PASS" signature="TSPMenorRota()[pri:0, instance:test.TesteVizinhoProximo@6574b225]" name="TSPMenorRota" duration-ms="47" started-at="2018-09-27T22:40:31Z" finished-at="2018-09-27T22:40:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TSPMenorRota -->
-        <test-method status="PASS" signature="rotaBelém()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaBelém" duration-ms="3" started-at="2018-09-26T17:42:11Z" finished-at="2018-09-26T17:42:11Z">
+        <test-method status="PASS" signature="rotaAcara()[pri:0, instance:test.TesteVizinhoProximo@6574b225]" name="rotaAcara" duration-ms="0" started-at="2018-09-27T22:40:31Z" finished-at="2018-09-27T22:40:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rotaAcara -->
+        <test-method status="PASS" signature="rotaBelém()[pri:0, instance:test.TesteVizinhoProximo@6574b225]" name="rotaBelém" duration-ms="16" started-at="2018-09-27T22:40:31Z" finished-at="2018-09-27T22:40:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rotaBelém -->
+        <test-method status="PASS" signature="rotaGaranhuns()[pri:0, instance:test.TesteVizinhoProximo@6574b225]" name="rotaGaranhuns" duration-ms="0" started-at="2018-09-27T22:40:31Z" finished-at="2018-09-27T22:40:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rotaGaranhuns -->
+        <test-method status="PASS" signature="rotaSalvador()[pri:0, instance:test.TesteVizinhoProximo@6574b225]" name="rotaSalvador" duration-ms="0" started-at="2018-09-27T22:40:31Z" finished-at="2018-09-27T22:40:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rotaSalvador -->
       </class> <!-- test.TesteVizinhoProximo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
