@@ -10,13 +10,13 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 1. ECLIPSE PHOTON EE
 2. ORACLE JAVA JDK 8_144
 
-# WIKI
-## AMBIENTE
+## WIKI
+### AMBIENTE
 + [Instalação dos Recursos e Configuração do Ambiente](https://github.com/SousaPedro11/maxmin_ed2/wiki/Instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-do-ambiente)
 
 + [Baixando o Repositório](https://github.com/SousaPedro11/maxmin_ed2/wiki/Baixando-o-Reposit%C3%B3rio)
 
-## Projeto
+### Projeto
 + [MaxMin](https://github.com/SousaPedro11/maxmin_ed2/wiki/MaxMin)
 
 + [Algoritmo Guloso](https://github.com/SousaPedro11/maxmin_ed2/wiki/Algoritmo-Guloso)
