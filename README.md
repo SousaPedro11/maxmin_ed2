@@ -32,7 +32,7 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 ### CONFIGURAÇÃO DO AMBIENTE
 
 1. É necessário criar variáveis de sistema e amiente, para ter acesso a essas configuraçães:
- Win(<img src="https://cdn.icon-icons.com/icons2/813/PNG/512/windows-10_icon-icons.com_66166.png"  width="15" height="15">)+Pause Break -> Configurações Avançadas do Sistema -> Variáveis de Ambiente.
+ Win(<img src="http://www.rw-designer.com/icon-image/7665-256x256x8.png"  width="15" height="15">)+Pause Break -> Configurações Avançadas do Sistema -> Variáveis de Ambiente.
 2. Crie ou edite a Variável de Usuário Path adicionando o caminho para \bin do Java JDK (ex: C:\Program Files\Java\jdk1.8.0_144\bin).
 3. Crie a Variável de Sistema JAVA_HOME adicionando o caminho da pasta do Java JDK (ex: C:\Program Files\Java\jdk1.8.0_144).
 4. Edite a Variável de Sistema Path adicionando as linhas: %JAVA_HOME%\bin.
