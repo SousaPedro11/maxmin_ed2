@@ -10,7 +10,7 @@ public class TesteMaxMin {
     static final int REPETICAO = 5;
 
     // Define o tamanho do vetor
-    final Integer tam = 50000000;
+    final Integer tam = 5000000;
 
     final Integer[] vetor = MaxMinUtil.arrayRandomico(this.tam);
 
