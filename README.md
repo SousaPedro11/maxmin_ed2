@@ -57,7 +57,7 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 
    <img src="https://sarafordnet.files.wordpress.com/2016/12/snaghtmlb64afe.png" width="480">
 3. Abra o git bash e vá para a pasta definida como workspace do eclipse. Ex: *cd ~/eclipse-workspace*
-4. Utilize o comando para clonar o repositório: *git clone linkdorepositório*. Ex: *git clone https://github.com/SousaPedro11/maxmin_ed2.git*
+4. Utilize o comando para clonar o repositório: *git clone linkdorepositório*. Ex: *git clone http&#58;github.com/SousaPedro11/maxmin_ed2.git*
 
 ## Abrindo o projeto no eclipse
 1. Abra o Eclipse
@@ -65,7 +65,7 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 3. Ao aparecer a janela parecida com a imagem abaixo, clique em *Browse*.
    
    <img src="https://i.stack.imgur.com/ZaFsl.png" width="640">
-4. Selecione a pasta do repositório que foi baixado seguindo o passo anterior. Ex: ***pastadousuario*** *> eclipse-workspace > maxmin_ed2* ou *C:\Users\**nomedousuario**\eclipse-workspace\projetos\maxmin_ed2*
+4. Selecione a pasta do repositório que foi baixado seguindo o passo anterior. Ex: ***pastadousuario*** *> eclipse-workspace > maxmin_ed2* ou *C:\Users\* **nomedousuario** *\eclipse-workspace\projetos\maxmin_ed2*
 5. Depois clique em *finish*
 
 ## LINKS EXTERNOS
