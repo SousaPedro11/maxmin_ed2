@@ -42,9 +42,43 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 8. No CMD digite java -version e aperte enter.
 9. Se o ambiente foi configurado com sucesso, aparecerá: Openjdk Version, Openjdk Runtime Enviroment e Openjdk Server VM.
 
+## Baixando o Repositório
+
+### Download
+1. Clique no botão clone or Download e selecione Download ZIP
+
+   <img src="https://raw.githubusercontent.com/SeeedDocument/Tutorial_Add_Arduino_Library/master/images/github_download.png" width="480">
+2. Extraia para a pasta definida como Workspace do eclipse.
+3. Renomeie a pasta de: *nomedorepositorio-master.zip* para *nomedorepositorio.zip*, ou seja, renomeie excluindo o *-master*.
+
+### Git Clone
+1. Baixe e instale o git (link presente no fim da página).
+2. Copie o link do repositório a ser baixado
+
+   <img src="https://sarafordnet.files.wordpress.com/2016/12/snaghtmlb64afe.png" width="480">
+3. Abra o git bash e vá para a pasta definida como workspace do eclipse. Ex: *cd ~/eclipse-workspace*
+4. Utilize o comando para clonar o repositório: *git clone linkdorepositório*. Ex: *git clone https://github.com/SousaPedro11/maxmin_ed2.git*
+
+## Abrindo o projeto no eclipse
+1. Abra o Eclipse
+2. Clique em: *File > Open projects from FileSystem or Archives*
+3. Ao aparecer a janela parecida com a imagem abaixo, clique em *Browse*.
+   
+   <img src="https://i.stack.imgur.com/ZaFsl.png" width="640">
+4. Selecione a pasta do repositório que foi baixado seguindo o passo anterior. Ex: ***pastadousuario*** *> eclipse-workspace > maxmin_ed2* ou *C:\Users\**nomedousuario**\eclipse-workspace\projetos\maxmin_ed2*
+5. Depois clique em *finish*
 
 ## LINKS EXTERNOS
+### Downloads
++ [Eclipse Photon EE](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/photonr)
 
-[Eclipse Photon EE](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/photonr)
++ [Oracle Java 8](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
 
-[Oracle Java 8](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
++ [Git](https://git-scm.com/downloads)
+
+### Guias e documentação
++ [git - Guia Prático](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
+
++ [Pro Git - Documentação](https://git-scm.com/book/pt-br/v1)
+
++ [Helo World - GitHub Guides](https://guides.github.com/activities/hello-world/)
