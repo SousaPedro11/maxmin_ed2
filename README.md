@@ -67,7 +67,7 @@ Ex: *git clone http&#58;github.com/SousaPedro11/maxmin_ed2.git*
 3. Ao aparecer a janela parecida com a imagem abaixo, clique em *Browse*.
    
    <img src="https://i.stack.imgur.com/ZaFsl.png" width="640">
-4. Selecione a pasta do repositório que foi baixado seguindo o passo anterior.<br /> Ex: <b><i>pastadousuario</i></b> *> eclipse-workspace > maxmin_ed2* ou <i>C:\Users\<b>nomedousuario</b>\eclipse-workspace\projetos\maxmin_ed2</i>
+4. Selecione a pasta do repositório que foi baixado seguindo o passo anterior.<br /> Ex: <b><i>pastadousuario</i></b> *> eclipse-workspace > maxmin_ed2* ou <i>C:\Users\\<b>nomedousuario</b>\eclipse-workspace\projetos\maxmin_ed2</i>
 5. Depois clique em *finish*
 
 ## LINKS EXTERNOS
