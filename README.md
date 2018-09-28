@@ -8,7 +8,7 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 ## RECURSOS UTILIZADOS
 
 1. ECLIPSE PHOTON EE
-2. ORACLE JAVA JDK 8_144
+2. ORACLE JAVA JDK 8
 
 ## WIKI
 ### AMBIENTE
@@ -16,7 +16,7 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 
 + [Baixando o Repositório](https://github.com/SousaPedro11/maxmin_ed2/wiki/Baixando-o-Reposit%C3%B3rio)
 
-### Projeto
+### PROJETO
 + [MaxMin](https://github.com/SousaPedro11/maxmin_ed2/wiki/MaxMin)
 
 + [Algoritmo Guloso](https://github.com/SousaPedro11/maxmin_ed2/wiki/Algoritmo-Guloso)
