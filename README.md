@@ -13,17 +13,17 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 ### INSTALAÇÃO DOS RECURSOS UTILIZADOS
 #### Java, Eclipse
 1. Baixe o Eclipse Photon e/ou Java JDK dos links presentes lá no final.
-2. De preferencia crie uma pasta na raiz do sistema para instalação do Eclipse, ex: C:\\Desenvolvimento (opcional).
+2. De preferencia crie uma pasta na raiz do sistema para instalação do Eclipse<br /> Ex: *C:\\Desenvolvimento* (opcional).
 3. Instale o Oracle Java SDK no diretório de sua preferência, mas recomendo instalar na padrão do sistema.
-4. Descompacte e copie o diretório do eclipse para a pasta de sua escolha (recomendo na C:\\Desenvolvimento).
+4. Descompacte e copie o diretório do eclipse para a pasta de sua escolha (recomendo na *C:\\Desenvolvimento*).
 
 #### TestNG
-1. No Eclipse selecione Help -> Install New Software.
-2. No campo Work With cole o link <http://beust.com/eclipse> e clique em add.
-3. Insira o nome TestNG, clique Ok.
-4. Espere carregar e assim que aparecer o TestNG, marque-o e clique em next.
-5. Clique em next até aparecer para aceitar licenças, aceite e clique em finish.
-6. Após iniciada a instalação poderá aparecer uma janela Security Warning, clique em Install Anyway e espere a instalação terminar.
+1. No Eclipse clique em *Help > Install New Software*.
+2. No campo Work With cole o link <http://beust.com/eclipse> e clique em *add*.
+3. Insira o nome TestNG, clique *Ok*.
+4. Espere carregar e assim que aparecer o TestNG, marque-o e clique em *next*.
+5. Clique em *next* até aparecer para aceitar licenças, aceite e clique em *finish*.
+6. Após iniciada a instalação poderá aparecer uma janela Security Warning, clique em *Install Anyway* e espere a instalação terminar.
 7. Quando for terminada o eclipse pedirá para ser reiniciado, reinicie-o.
 9. Ao ser aberto novamente o TestNG já poderá ser utilizado.
 
@@ -32,32 +32,34 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 ### CONFIGURAÇÃO DO AMBIENTE
 
 1. É necessário criar variáveis de sistema e amiente, para ter acesso a essas configuraçães:
- Win(<img src="http://www.rw-designer.com/icon-image/7665-256x256x8.png"  width="15" height="15">)+Pause Break -> Configurações Avançadas do Sistema -> Variáveis de Ambiente.
-2. Crie ou edite a **Variável de Usuário** Path adicionando o caminho para \bin do Java JDK (ex: C:\Program Files\Java\jdk1.8.0_144\bin).
-3. Crie a **Variável de Sistema** JAVA_HOME adicionando o caminho da pasta do Java JDK (ex: C:\Program Files\Java\jdk1.8.0_144).
-4. Edite a **Variável de Sistema** Path adicionando as linhas: %JAVA_HOME%\bin.
-5. Aperte OK nas janelas para validar as configurações.
+ *Win(*<img src="http://www.rw-designer.com/icon-image/7665-256x256x8.png"  width="15" height="15">)*+Pause Break > Configurações Avançadas do Sistema > Variáveis de Ambiente*.
+2. Crie ou edite a **Variável de Usuário** Path adicionando o caminho para *\bin* do Java JDK.<br /> Ex: *C:\Program Files\Java\jdk1.8.0_144\bin*
+3. Crie a **Variável de Sistema** *JAVA*\_*HOME* adicionando o caminho da pasta do Java JDK.<br /> Ex: *C:\Program Files\Java\jdk1.8.0_144*
+4. Edite a **Variável de Sistema** *Path* adicionando as linhas: *%JAVA*\_*HOME%\bin*.
+5. Clique *OK* nas janelas para validar as configurações.
 6. Agora devemos testar se funcionou.
-7. Pressione Win(<img src="http://www.rw-designer.com/icon-image/7665-256x256x8.png"  width="15" height="15">)+R , digite cmd e aperte enter para abrir o Prompt.
-8. No CMD digite java -version e aperte enter.
+7. Pressione *Win(*<img src="http://www.rw-designer.com/icon-image/7665-256x256x8.png"  width="15" height="15">)*+R* , digite *cmd* e aperte *enter* para abrir o Prompt.
+8. No CMD digite *java -version* e aperte *enter*.
 9. Se o ambiente foi configurado com sucesso, aparecerá: Openjdk Version, Openjdk Runtime Enviroment e Openjdk Server VM.
 
 ## Baixando o Repositório
 
 ### Download
-1. Clique no botão clone or Download e selecione Download ZIP
+1. Clique no botão *clone or Download* e selecione *Download ZIP*
 
    <img src="https://raw.githubusercontent.com/SeeedDocument/Tutorial_Add_Arduino_Library/master/images/github_download.png" width="480">
 2. Extraia para a pasta definida como Workspace do eclipse.
-3. Renomeie a pasta de: *nomedorepositorio-master.zip* para *nomedorepositorio.zip*, ou seja, renomeie excluindo o *-master*.
+3. Renomeie a pasta extraída de: *nomedorepositorio-master.zip* para *nomedorepositorio.zip*, ou seja, renomeie excluindo o *-master*.
 
 ### Git Clone
 1. Baixe e instale o git (link presente no fim da página).
 2. Copie o link do repositório a ser baixado
 
    <img src="https://sarafordnet.files.wordpress.com/2016/12/snaghtmlb64afe.png" width="480">
-3. Abra o git bash e vá para a pasta definida como workspace do eclipse. Ex: *cd ~/eclipse-workspace*
-4. Utilize o comando para clonar o repositório: *git clone linkdorepositório*. Ex: *git clone http&#58;github.com/SousaPedro11/maxmin_ed2.git*
+3. Abra o git bash e vá para a pasta definida como workspace do eclipse.<br /> Ex: *cd ~/eclipse-workspace*
+4. Utilize o comando para clonar o repositório: *git clone linkdorepositório*.<br />
+Ex: *git clone http&#58;github.com/SousaPedro11/maxmin_ed2.git*
+5. Feche o git Bash caso não precise utilizá-lo.
 
 ## Abrindo o projeto no eclipse
 1. Abra o Eclipse
@@ -65,7 +67,7 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 3. Ao aparecer a janela parecida com a imagem abaixo, clique em *Browse*.
    
    <img src="https://i.stack.imgur.com/ZaFsl.png" width="640">
-4. Selecione a pasta do repositório que foi baixado seguindo o passo anterior. Ex: ***pastadousuario*** *> eclipse-workspace > maxmin_ed2* ou *C:\Users\* **nomedousuario** *\eclipse-workspace\projetos\maxmin_ed2*
+4. Selecione a pasta do repositório que foi baixado seguindo o passo anterior.<br /> Ex: **pastadousuario** *> eclipse-workspace > maxmin_ed2* ou *C:\Users\* **nomedousuario** *\eclipse-workspace\projetos\maxmin_ed2*
 5. Depois clique em *finish*
 
 ## LINKS EXTERNOS
