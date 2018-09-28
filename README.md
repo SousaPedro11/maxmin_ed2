@@ -33,9 +33,9 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 
 1. É necessário criar variáveis de sistema e amiente, para ter acesso a essas configuraçães:
  Win(<img src="http://www.rw-designer.com/icon-image/7665-256x256x8.png"  width="15" height="15">)+Pause Break -> Configurações Avançadas do Sistema -> Variáveis de Ambiente.
-2. Crie ou edite a Variável de Usuário Path adicionando o caminho para \bin do Java JDK (ex: C:\Program Files\Java\jdk1.8.0_144\bin).
-3. Crie a Variável de Sistema JAVA_HOME adicionando o caminho da pasta do Java JDK (ex: C:\Program Files\Java\jdk1.8.0_144).
-4. Edite a Variável de Sistema Path adicionando as linhas: %JAVA_HOME%\bin.
+2. Crie ou edite a __Variável de Usuário__ Path adicionando o caminho para \bin do Java JDK (ex: C:\Program Files\Java\jdk1.8.0_144\bin).
+3. Crie a __Variável de Sistema__ JAVA_HOME adicionando o caminho da pasta do Java JDK (ex: C:\Program Files\Java\jdk1.8.0_144).
+4. Edite a __Variável de Sistema__ Path adicionando as linhas: %JAVA_HOME%\bin.
 5. Aperte OK nas janelas para validar as configurações.
 6. Agora devemos testar se funcionou.
 7. Pressione Win(<img src="http://www.rw-designer.com/icon-image/7665-256x256x8.png"  width="15" height="15">)+R , digite cmd e aperte enter para abrir o Prompt.
