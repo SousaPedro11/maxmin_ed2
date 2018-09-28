@@ -11,13 +11,13 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 2. ORACLE JAVA JDK 8_144
 
 ### INSTALAÇÃO DOS RECURSOS UTILIZADOS
-#### Java, Eclipse
+#### JAVA, ECLIPSE
 1. Baixe o Eclipse Photon e/ou Java JDK dos links presentes lá no final.
 2. De preferencia crie uma pasta na raiz do sistema para instalação do Eclipse<br /> Ex: *C:\\Desenvolvimento* (opcional).
 3. Instale o Oracle Java SDK no diretório de sua preferência, mas recomendo instalar na padrão do sistema.
 4. Descompacte e copie o diretório do eclipse para a pasta de sua escolha (recomendo na *C:\\Desenvolvimento*).
 
-#### TestNG
+#### TESTNG
 1. No Eclipse clique em *Help > Install New Software*.
 2. No campo Work With cole o link <http://beust.com/eclipse> e clique em *add*.
 3. Insira o nome TestNG, clique *Ok*.
@@ -42,16 +42,16 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 8. No CMD digite *java -version* e aperte *enter*.
 9. Se o ambiente foi configurado com sucesso, aparecerá: Openjdk Version, Openjdk Runtime Enviroment e Openjdk Server VM.
 
-## Baixando o Repositório
+## BAIXANDO O REPOSITÓRIO
 
-### Download
+### DOWNLOAD
 1. Clique no botão *clone or Download* e selecione *Download ZIP*
 
    <img src="https://raw.githubusercontent.com/SeeedDocument/Tutorial_Add_Arduino_Library/master/images/github_download.png" width="480">
 2. Extraia para a pasta definida como Workspace do eclipse.
 3. Renomeie a pasta extraída de: *nomedorepositorio-master.zip* para *nomedorepositorio.zip*, ou seja, renomeie excluindo o *-master*.
 
-### Git Clone
+### GIT CLONE
 1. Baixe e instale o git (link presente no fim da página).
 2. Copie o link do repositório a ser baixado
 
@@ -61,7 +61,7 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 Ex: *git clone http&#58;github.com/SousaPedro11/maxmin_ed2.git*
 5. Feche o git Bash caso não precise utilizá-lo.
 
-## Abrindo o projeto no eclipse
+## ABRINDO O PROJETO NO ECLIPSE
 1. Abra o Eclipse
 2. Clique em: *File > Open projects from FileSystem or Archives*
 3. Ao aparecer a janela parecida com a imagem abaixo, clique em *Browse*.
@@ -71,14 +71,14 @@ Ex: *git clone http&#58;github.com/SousaPedro11/maxmin_ed2.git*
 5. Depois clique em *finish*
 
 ## LINKS EXTERNOS
-### Downloads
+### DOWNLOADS
 + [Eclipse Photon EE](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/photonr)
 
 + [Oracle Java 8](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
 
 + [Git](https://git-scm.com/downloads)
 
-### Guias e documentação
+### GUIAS E DOCUMENTAÇÃO
 + [git - Guia Prático](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 
 + [Pro Git - Documentação](https://git-scm.com/book/pt-br/v1)
