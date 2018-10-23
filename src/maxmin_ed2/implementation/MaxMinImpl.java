@@ -18,17 +18,14 @@ public final class MaxMinImpl {
      *
      * @param vetor
      */
-    public static void maxMin1(final Integer[] vetor) {
-
-        // inicia o contador de tempo
-        final long tempoInicial = System.currentTimeMillis();
+    public static int[] maxMin1(final Integer[] vetor, final int n) {
 
         // inicializa max e min como o valor do primeiro elemento do vetor
         int maximo = vetor[0];
         int minimo = vetor[0];
 
         // varre o vetor fazendo as comparações
-        for (int i = 1; i < vetor.length; i++) {
+        for (int i = 1; i < n; i++) {
             if (vetor[i] > maximo) {// se o elemento na posicao i do vetor for maior que a variavel maximo, esta assume o valor do elemento
                 maximo = vetor[i];
             }
@@ -38,13 +35,11 @@ public final class MaxMinImpl {
         }
 
         // saida
-        System.out.println("\nMaxMin1");
-        System.out.println("O valor mínimo é: " + minimo);
-        System.out.println("O valor máximo é: " + maximo);
+        final int maxMin[] = new int[2];
+        maxMin[0] = maximo;
+        maxMin[1] = minimo;
+        return maxMin;
 
-        // finaliza a contagem do tempo e imprime o tempo de execucao do metodo
-        final long tempoFinal = System.currentTimeMillis();
-        System.out.printf("Tempo de execução maxMin1: %.3f ms%n", (float) (tempoFinal - tempoInicial));
     }
 
     /**
@@ -58,18 +53,16 @@ public final class MaxMinImpl {
      * </li>
      *
      * @param vetor
+     * @return
      */
-    public static void maxMin2(final Integer[] vetor) {
-
-        // inicia o contador de tempo
-        final long tempoInicial = System.currentTimeMillis();
+    public static int[] maxMin2(final Integer[] vetor, final int n) {
 
         // inicializa max e min como o valor do primeiro elemento do vetor
         int maximo = vetor[0];
         int minimo = vetor[0];
 
         // varre o vetor fazendo as comparações
-        for (int i = 1; i < vetor.length; i++) {
+        for (int i = 1; i < n; i++) {
             if (vetor[i] > maximo) {// se o elemento na posicao i do vetor for maior que a variavel maximo, esta assume o valor do elemento
                 maximo = vetor[i];
             } else if (vetor[i] < minimo) {// senao, se o elemento na posicao i do vetor for menor que a variavel minimo, esta assume o valor do
@@ -79,13 +72,11 @@ public final class MaxMinImpl {
         }
 
         // saida
-        System.out.println("\nMaxMin2");
-        System.out.println("O valor mínimo é: " + minimo);
-        System.out.println("O valor máximo é: " + maximo);
+        final int maxMin[] = new int[2];
+        maxMin[0] = maximo;
+        maxMin[1] = minimo;
+        return maxMin;
 
-        // finaliza a contagem do tempo e imprime o tempo de execucao do metodo
-        final long tempoFinal = System.currentTimeMillis();
-        System.out.printf("Tempo de execução maxMin2: %.3f ms%n", (float) (tempoFinal - tempoInicial));
     }
 
     /**
@@ -99,24 +90,21 @@ public final class MaxMinImpl {
      * </li>
      *
      * @param vetor
+     * @return
      */
-    public static void maxMin3(final Integer[] vetor) {
-
-        // inicia o contador de tempo
-        final long tempoInicial = System.currentTimeMillis();
+    public static int[] maxMin3(final Integer[] vetor, final int n) {
 
         // inicializa maximo e minimo como o valor do primeiro elemento do vetor
-        int maximo = vetor[0];
-        int minimo = vetor[0];
-        // define n como o tamanho do vetor
-        final int tamanho = vetor.length;
+        int maximo;
+        int minimo;
         int fimDoAnel;
+        int i = 2;
 
-        if ((tamanho % 2) > 0) {// se tamanho for par
-            vetor[tamanho] = vetor[tamanho - 1];
-            fimDoAnel = tamanho;
+        if ((n % 2) > 0) {// se n for par
+            vetor[n] = vetor[n - 1];
+            fimDoAnel = n;
         } else {// se nao for par
-            fimDoAnel = tamanho - 1;
+            fimDoAnel = n - 1;
         }
 
         if (vetor[0] > vetor[1]) {// se o primeiro elemento for maior que o segundo
@@ -128,7 +116,7 @@ public final class MaxMinImpl {
         }
 
         // varre o vetor fazendo as comparações
-        for (int i = 2; i < fimDoAnel; i++) {
+        while (i < fimDoAnel) {
             if (vetor[i] > vetor[i + 1]) {// se o elemento do vetor for maior que o proximo elemento
                 if (vetor[i] > maximo) {// se este elemento for o maior
                     maximo = vetor[i];
@@ -138,24 +126,23 @@ public final class MaxMinImpl {
                     minimo = vetor[i + 1];
                 }
             } else {
-                if (vetor[i + 1] > maximo) {
-                    maximo = vetor[i + 1];
-                }
-
                 if (vetor[i] < minimo) {
                     minimo = vetor[i];
                 }
+
+                if (vetor[i + 1] > maximo) {
+                    maximo = vetor[i + 1];
+                }
             }
+            i += 2;
         }
 
         // saida
-        System.out.println("\nMaxMin3");
-        System.out.println("O valor mínimo é: " + minimo);
-        System.out.println("O valor máximo é: " + maximo);
+        final int maxMin[] = new int[2];
+        maxMin[0] = maximo;
+        maxMin[1] = minimo;
+        return maxMin;
 
-        // finaliza a contagem do tempo e imprime o tempo de execucao do metodo
-        final long tempoFinal = System.currentTimeMillis();
-        System.out.printf("Tempo de execução maxMin3: %.3f ms%n", (float) (tempoFinal - tempoInicial));
     }
 
 }

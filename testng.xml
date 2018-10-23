@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite
+	name="maxmin"
+	verbose="1">
+
+	<test name="maxMin1">
+		<classes>
+		<class name="test.TesteMaxMin">
+		<methods><include name="min1"></include></methods>
+		</class>
+		</classes>
+	</test>
+	
+	<test name="maxMin2">
+		<classes>
+		<class name="test.TesteMaxMin">
+		<methods><include name="min2"></include></methods>
+		</class>
+		</classes>
+	</test>
+
+	<test name="maxMin3">
+		<classes>
+		<class name="test.TesteMaxMin">
+		<methods><include name="min3"></include></methods>
+		</class>
+		</classes>
+	</test>
+
+</suite>

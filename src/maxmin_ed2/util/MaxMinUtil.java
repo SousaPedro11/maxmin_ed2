@@ -18,7 +18,7 @@ public class MaxMinUtil {
         final Integer[] array = new Integer[tam];
 
         final Random rand = new Random();
-        final int max = 999999;
+        final int max = 99999999;
         final int min = 0;
         rand.nextInt(((max - min) + 1) + min);
         for (int i = 0; i < tam; i++) {
@@ -40,4 +40,5 @@ public class MaxMinUtil {
                         .collect(Collectors.joining(","));
         System.out.println("Vetor: [" + vet + "]");
     }
+
 }
