@@ -1,4 +1,4 @@
-package maxmin_ed2.implementation;
+package guloso.troco;
 
 import java.text.DecimalFormat;
 

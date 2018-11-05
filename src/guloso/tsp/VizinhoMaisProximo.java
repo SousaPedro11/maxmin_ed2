@@ -1,9 +1,9 @@
-package tsp.vizinhomaisproximo;
+package guloso.tsp;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import tsp.vizinhomaisproximo.util.Utilitario;
+import guloso.tsp.util.Utilitario;
 
 public class VizinhoMaisProximo {
 

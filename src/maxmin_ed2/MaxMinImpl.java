@@ -1,4 +1,4 @@
-package maxmin_ed2.implementation;
+package maxmin_ed2;
 
 public final class MaxMinImpl {
 

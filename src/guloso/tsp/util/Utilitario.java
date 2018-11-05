@@ -1,10 +1,10 @@
-package tsp.vizinhomaisproximo.util;
+package guloso.tsp.util;
 
 import java.util.ArrayList;
 
-import tsp.vizinhomaisproximo.Cidade;
-import tsp.vizinhomaisproximo.Rota;
-import tsp.vizinhomaisproximo.VizinhoMaisProximo;
+import guloso.tsp.Cidade;
+import guloso.tsp.Rota;
+import guloso.tsp.VizinhoMaisProximo;
 
 public final class Utilitario {
 
@@ -14,11 +14,12 @@ public final class Utilitario {
 
     public static String printaSeparador() {
 
-        final StringBuilder sep = new StringBuilder();
-        for (int i = 0; i < 73; i++) {
-            sep.append("-");
+        final StringBuilder sb = new StringBuilder();
+        final int numSeparadores = 73;
+        for (int i = 0; i < numSeparadores; i++) {
+            sb.append("-");
         }
-        return sep.toString();
+        return sb.toString();
     }
 
     public static void imprimeMenoresRotas(final Rota menorRota) {

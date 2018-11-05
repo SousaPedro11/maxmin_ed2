@@ -5,9 +5,9 @@ import java.util.Arrays;
 
 import org.testng.annotations.Test;
 
-import tsp.vizinhomaisproximo.Cidade;
-import tsp.vizinhomaisproximo.VizinhoMaisProximo;
-import tsp.vizinhomaisproximo.util.Utilitario;
+import guloso.tsp.Cidade;
+import guloso.tsp.VizinhoMaisProximo;
+import guloso.tsp.util.Utilitario;
 
 public class TesteVizinhoProximo {
 

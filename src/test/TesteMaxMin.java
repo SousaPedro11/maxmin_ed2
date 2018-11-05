@@ -2,7 +2,7 @@ package test;
 
 import org.testng.annotations.Test;
 
-import maxmin_ed2.implementation.MaxMinImpl;
+import maxmin_ed2.MaxMinImpl;
 import maxmin_ed2.util.MaxMinUtil;
 
 public class TesteMaxMin {

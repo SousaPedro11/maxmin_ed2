@@ -1,4 +1,4 @@
-package tsp.vizinhomaisproximo;
+package guloso.tsp;
 
 public class Cidade {
 

@@ -2,7 +2,7 @@ package test;
 
 import org.testng.annotations.Test;
 
-import maxmin_ed2.implementation.GulosoTrocoImpl;
+import guloso.troco.GulosoTrocoImpl;
 
 public class TesteGulosoTroco {
 
