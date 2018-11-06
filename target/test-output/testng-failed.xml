@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TesteMM">
+      <class name="test.TesteMaxMin">
         <methods>
-          <include name="maxMin3"/>
+          <include name="min1Melhor"/>
         </methods>
-      </class> <!-- test.TesteMM -->
+      </class> <!-- test.TesteMaxMin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
