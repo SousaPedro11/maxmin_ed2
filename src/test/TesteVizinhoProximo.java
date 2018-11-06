@@ -23,11 +23,14 @@ public class TesteVizinhoProximo {
                     new Cidade("Farroupilha - RS", -29.2227, -51.3419),// 9046,385 sem voltar
                     new Cidade("Oiapoque - AP", 3.84074, -51.8331)));// 9046,385 sem voltar
 
+    /**
+     * Teste de entrada aleatória, definida pela entrada null
+     */
     @Test()
     public void TSPMenorRota() {
 
-        Utilitario.imprimeMenoresRotas(new VizinhoMaisProximo().encontraMenorRota(TesteVizinhoProximo.cidadesIniciais, null));
-        // System.out.println(Rota.distanciaInicioFim);
+        Utilitario.imprimeMenoresRotas(new VizinhoMaisProximo()
+                        .encontraMenorRota(TesteVizinhoProximo.cidadesIniciais, null));
         System.out.println("\n");
     }
 
@@ -36,11 +39,7 @@ public class TesteVizinhoProximo {
 
         final String input = "Acará - PA";
 
-        Utilitario.imprimeMenoresRotas(
-                        new VizinhoMaisProximo().encontraMenorRota(TesteVizinhoProximo.cidadesIniciais,
-                                        TesteVizinhoProximo.cidadesIniciais
-                                                        .get(Utilitario.procuraIndice(input, TesteVizinhoProximo.cidadesIniciais))));
-        // System.out.println(Rota.distanciaInicioFim);
+        this.calculaRota(input);
     }
 
     @Test
@@ -48,11 +47,7 @@ public class TesteVizinhoProximo {
 
         final String input = "Salvador - BA";
 
-        Utilitario.imprimeMenoresRotas(
-                        new VizinhoMaisProximo().encontraMenorRota(TesteVizinhoProximo.cidadesIniciais,
-                                        TesteVizinhoProximo.cidadesIniciais
-                                                        .get(Utilitario.procuraIndice(input, TesteVizinhoProximo.cidadesIniciais))));
-        // System.out.println(Rota.distanciaInicioFim);
+        this.calculaRota(input);
     }
 
     @Test
@@ -60,11 +55,7 @@ public class TesteVizinhoProximo {
 
         final String input = "Garanhuns - PE";
 
-        Utilitario.imprimeMenoresRotas(
-                        new VizinhoMaisProximo().encontraMenorRota(TesteVizinhoProximo.cidadesIniciais,
-                                        TesteVizinhoProximo.cidadesIniciais
-                                                        .get(Utilitario.procuraIndice(input, TesteVizinhoProximo.cidadesIniciais))));
-        // System.out.println(Rota.distanciaInicioFim);
+        this.calculaRota(input);
     }
 
     @Test
@@ -72,10 +63,33 @@ public class TesteVizinhoProximo {
 
         final String input = "Belém - PA";
 
-        Utilitario.imprimeMenoresRotas(
-                        new VizinhoMaisProximo().encontraMenorRota(TesteVizinhoProximo.cidadesIniciais,
-                                        TesteVizinhoProximo.cidadesIniciais
-                                                        .get(Utilitario.procuraIndice(input, TesteVizinhoProximo.cidadesIniciais))));
-        // System.out.println(Rota.distanciaInicioFim);
+        this.calculaRota(input);
+    }
+
+    @Test
+    public void rotaMarituba() {
+
+        final String input = "Marituba - PA";
+
+        this.calculaRota(input);
+    }
+
+    public void calculaRota(final String input) {
+
+        final Integer procuraIndice = Utilitario.procuraIndice(input, TesteVizinhoProximo.cidadesIniciais);
+
+        if (procuraIndice != null) {
+
+            Utilitario.imprimeMenoresRotas(
+                            new VizinhoMaisProximo()
+                                            .encontraMenorRota(TesteVizinhoProximo.cidadesIniciais,
+                                                            TesteVizinhoProximo.cidadesIniciais
+                                                                            .get(procuraIndice)));
+            System.out.println("");
+        } else {
+            VizinhoMaisProximo.imprimeListaInicial(TesteVizinhoProximo.cidadesIniciais, input);
+            System.out.println("\"" + input + "\" não consta na lista!");
+            System.out.println("\n");
+        }
     }
 }

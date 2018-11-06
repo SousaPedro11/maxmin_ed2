@@ -15,7 +15,7 @@ public final class Utilitario {
     public static String printaSeparador() {
 
         final StringBuilder sb = new StringBuilder();
-        final int numSeparadores = 73;
+        final int numSeparadores = 195;
         for (int i = 0; i < numSeparadores; i++) {
             sb.append("-");
         }
@@ -27,6 +27,7 @@ public final class Utilitario {
         System.out.println(Utilitario.printaSeparador());
         System.out.println("Caminho mais curto até agora: " + VizinhoMaisProximo.menorRota);
         System.out.println("Distancia total: " + String.format("%.3f", menorRota.calculaDistanciaTotal()) + " Km");
+        System.out.println();
     }
 
     public static Integer procuraIndice(final String input, final ArrayList<Cidade> array) {

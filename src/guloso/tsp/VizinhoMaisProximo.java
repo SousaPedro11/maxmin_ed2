@@ -19,7 +19,7 @@ public class VizinhoMaisProximo {
         final ArrayList<Cidade> cidades = (ArrayList<Cidade>) cidadesIniciais.clone();
 
         final ArrayList<Cidade> cidadesMenorRota = new ArrayList<>();
-        final String separador = Utilitario.printaSeparador();
+        // final String separador = Utilitario.printaSeparador();
         Cidade cidade = null;
 
         if (input == null) {
@@ -27,10 +27,7 @@ public class VizinhoMaisProximo {
         } else {
             VizinhoMaisProximo.cidadeinicial = input;
         }
-        System.out.println(separador);
-        System.out.println("Lista de cidades:     ==> " + Arrays.toString(cidades.toArray()));
-        System.out.println("Distancia total nesse percurso : " + String.format("%.3f", new Rota(cidades).calculaDistanciaInicial()) + " Km");
-        System.out.println(separador);
+        VizinhoMaisProximo.imprimeListaInicial(cidades, VizinhoMaisProximo.cidadeinicial.toString());
 
         cidade = VizinhoMaisProximo.cidadeinicial;
         this.atualizaRotas(cidadesMenorRota, cidades, cidade);
@@ -40,22 +37,29 @@ public class VizinhoMaisProximo {
             this.atualizaRotas(cidadesMenorRota, cidades, cidade);
         }
 
-        // this.atualizaRotas(cidadesMenorRota, cidades, VizinhoMaisProximo.cidadeinicial);
-        // cidadesMenorRota.add(VizinhoMaisProximo.cidadeinicial);
         VizinhoMaisProximo.menorRota.clear();
         VizinhoMaisProximo.menorRota.addAll(cidadesMenorRota);
         VizinhoMaisProximo.menorRota.add(VizinhoMaisProximo.cidadeinicial);
-        System.out.println("Cidades na menor rota ==> " + Arrays.toString(VizinhoMaisProximo.menorRota.toArray()));
+        System.out.println("Cidades visitadas (retorno) ==> " + Arrays.toString(VizinhoMaisProximo.menorRota.toArray()));
 
         VizinhoMaisProximo.cidadefinal = cidade;
         return new Rota(cidadesMenorRota);
+    }
+
+    public static void imprimeListaInicial(final ArrayList<Cidade> cidades, final String input) {
+
+        System.out.println("Rota iniciada em: ".toUpperCase() + input.toString().toUpperCase());
+        System.out.println(Utilitario.printaSeparador());
+        System.out.println("Lista inicial de cidades: ==> " + Arrays.toString(cidades.toArray()));
+        System.out.println("Distancia total nessa ordem : " + String.format("%.3f", new Rota(cidades).calculaDistanciaInicial()) + " Km");
+        System.out.println(Utilitario.printaSeparador());
     }
 
     private void atualizaRotas(final ArrayList<Cidade> cidadesMenorRota, final ArrayList<Cidade> cidades, final Cidade cidade) {
 
         cidadesMenorRota.add(cidade);
         cidades.remove(cidade);
-        System.out.println("Cidades na menor rota ==> " + Arrays.toString(cidadesMenorRota.toArray()));
+        System.out.println("Cidades visitadas ==> " + Arrays.toString(cidadesMenorRota.toArray()));
         System.out.println("Cidades restantes     ==> " + Arrays.toString(cidades.toArray()) + "\n");
     }
 

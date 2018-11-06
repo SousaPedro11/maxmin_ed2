@@ -7,14 +7,12 @@ import maxmin_ed2.util.MaxMinUtil;
 
 public class TesteMaxMin {
 
-    private final Integer[] vetor = MaxMinUtil.arrayRandomico(this.tam);
-
-    static final int REPETICAO = 5;
+    static final int REPETICAO = 1;
 
     // Define o tamanho do vetor
-    final Integer tam = 10000000;
+    final Integer tam = 20/* 10000000 */;
 
-    // final Integer[] vetor = MaxMinUtil.arrayRandomico(this.tam);
+    final Integer[] vetor = MaxMinUtil.arrayRandomico(this.tam);
 
     @Test(invocationCount = TesteMaxMin.REPETICAO)
     public void min1() {

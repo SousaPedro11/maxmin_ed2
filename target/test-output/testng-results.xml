@@ -1,81 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="21" passed="15">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="maxmin" duration-ms="458" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
+  <suite name="Default suite" duration-ms="67" started-at="2018-11-06T14:39:34Z" finished-at="2018-11-06T14:39:34Z">
     <groups>
     </groups>
-    <test name="maxMin1" duration-ms="127" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-      <class name="test.TesteMaxMin">
-        <test-method status="PASS" signature="min1()[pri:0, instance:test.TesteMaxMin@6574b225]" name="min1" duration-ms="34" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
+    <test name="Default test" duration-ms="67" started-at="2018-11-06T14:39:34Z" finished-at="2018-11-06T14:39:34Z">
+      <class name="test.TesteMM">
+        <test-method status="PASS" signature="maxMin1()[pri:0, instance:test.TesteMM@5cc7c2a6]" name="maxMin1" duration-ms="44" started-at="2018-11-06T14:39:34Z" finished-at="2018-11-06T14:39:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- min1 -->
-        <test-method status="PASS" signature="min1()[pri:0, instance:test.TesteMaxMin@6574b225]" name="min1" duration-ms="21" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
+        </test-method> <!-- maxMin1 -->
+        <test-method status="PASS" signature="maxMin2()[pri:0, instance:test.TesteMM@5cc7c2a6]" name="maxMin2" duration-ms="2" started-at="2018-11-06T14:39:34Z" finished-at="2018-11-06T14:39:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- min1 -->
-        <test-method status="PASS" signature="min1()[pri:0, instance:test.TesteMaxMin@6574b225]" name="min1" duration-ms="17" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
+        </test-method> <!-- maxMin2 -->
+        <test-method status="PASS" signature="maxMin3()[pri:0, instance:test.TesteMM@5cc7c2a6]" name="maxMin3" duration-ms="1" started-at="2018-11-06T14:39:34Z" finished-at="2018-11-06T14:39:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- min1 -->
-        <test-method status="PASS" signature="min1()[pri:0, instance:test.TesteMaxMin@6574b225]" name="min1" duration-ms="18" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min1 -->
-        <test-method status="PASS" signature="min1()[pri:0, instance:test.TesteMaxMin@6574b225]" name="min1" duration-ms="17" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min1 -->
-      </class> <!-- test.TesteMaxMin -->
-    </test> <!-- maxMin1 -->
-    <test name="maxMin2" duration-ms="118" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-      <class name="test.TesteMaxMin">
-        <test-method status="PASS" signature="min2()[pri:0, instance:test.TesteMaxMin@7f9a81e8]" name="min2" duration-ms="27" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-        <test-method status="PASS" signature="min2()[pri:0, instance:test.TesteMaxMin@7f9a81e8]" name="min2" duration-ms="21" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-        <test-method status="PASS" signature="min2()[pri:0, instance:test.TesteMaxMin@7f9a81e8]" name="min2" duration-ms="21" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-        <test-method status="PASS" signature="min2()[pri:0, instance:test.TesteMaxMin@7f9a81e8]" name="min2" duration-ms="20" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-        <test-method status="PASS" signature="min2()[pri:0, instance:test.TesteMaxMin@7f9a81e8]" name="min2" duration-ms="22" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min2 -->
-      </class> <!-- test.TesteMaxMin -->
-    </test> <!-- maxMin2 -->
-    <test name="maxMin3" duration-ms="184" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-      <class name="test.TesteMaxMin">
-        <test-method status="PASS" signature="min3()[pri:0, instance:test.TesteMaxMin@7dc7cbad]" name="min3" duration-ms="48" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-        <test-method status="PASS" signature="min3()[pri:0, instance:test.TesteMaxMin@7dc7cbad]" name="min3" duration-ms="36" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-        <test-method status="PASS" signature="min3()[pri:0, instance:test.TesteMaxMin@7dc7cbad]" name="min3" duration-ms="31" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-        <test-method status="PASS" signature="min3()[pri:0, instance:test.TesteMaxMin@7dc7cbad]" name="min3" duration-ms="31" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-        <test-method status="PASS" signature="min3()[pri:0, instance:test.TesteMaxMin@7dc7cbad]" name="min3" duration-ms="31" started-at="2018-10-23T16:02:52Z" finished-at="2018-10-23T16:02:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- min3 -->
-      </class> <!-- test.TesteMaxMin -->
-    </test> <!-- maxMin3 -->
-  </suite> <!-- maxmin -->
+        </test-method> <!-- maxMin3 -->
+      </class> <!-- test.TesteMM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

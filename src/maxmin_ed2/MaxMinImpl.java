@@ -101,7 +101,7 @@ public final class MaxMinImpl {
         int i = 2;
 
         if ((n % 2) > 0) {// se n for par
-            vetor[n] = vetor[n - 1];
+            // vetor[n] = vetor[n - 1];
             fimDoAnel = n;
         } else {// se nao for par
             fimDoAnel = n - 1;
