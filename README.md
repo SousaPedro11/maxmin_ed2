@@ -11,6 +11,8 @@ Implementação dos algoritmos MaxMin e Guloso da disciplina Estrutura de Dados II
 2. ORACLE JAVA JDK 8
 
 ## WIKI
+### HOME
++ [Homepage](https://github.com/SousaPedro11/maxmin_ed2/wiki)
 ### AMBIENTE
 + [Instalação dos Recursos e Configuração do Ambiente](https://github.com/SousaPedro11/maxmin_ed2/wiki/Instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-do-ambiente)
 
