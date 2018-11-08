@@ -19,7 +19,7 @@ public class VizinhoMaisProximo {
         final ArrayList<Cidade> cidades = (ArrayList<Cidade>) cidadesIniciais.clone();
 
         final ArrayList<Cidade> cidadesMenorRota = new ArrayList<>();
-        // final String separador = Utilitario.printaSeparador();
+
         Cidade cidade = null;
 
         if (input == null) {

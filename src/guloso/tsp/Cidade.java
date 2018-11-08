@@ -6,8 +6,6 @@ public class Cidade {
 
     private static final double grausRadianos = Math.PI / 180D;
 
-    /* private static final double kmToMilhas = 0.621371; */
-
     private final double longitude;
 
     private final double latitude;
@@ -42,7 +40,7 @@ public class Cidade {
         final double deltaLatitude = (cidade.getLatitude() - this.getLatitude());
         final double a = Math.pow(Math.sin(deltaLatitude / 2D), 2D) +
                         (Math.cos(this.getLatitude()) * Math.cos(cidade.getLatitude()) * Math.pow(Math.sin(deltaLongitude / 2D), 2D));
-        return /* Cidade.kmToMilhas * */Cidade.raioEquatorialTerra * 2D * Math.atan2(Math.sqrt(a), Math.sqrt(1D - a));
+        return Cidade.raioEquatorialTerra * 2D * Math.atan2(Math.sqrt(a), Math.sqrt(1D - a));
     }
 
     @Override
