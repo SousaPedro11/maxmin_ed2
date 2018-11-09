@@ -5,7 +5,8 @@
     <classes>
       <class name="test.TesteMaxMin">
         <methods>
-          <include name="min1Melhor"/>
+          <include name="min3Melhor"/>
+          <include name="min3"/>
         </methods>
       </class> <!-- test.TesteMaxMin -->
     </classes>

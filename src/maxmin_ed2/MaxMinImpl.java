@@ -1,5 +1,9 @@
 package maxmin_ed2;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public final class MaxMinImpl {
 
     private MaxMinImpl() {
@@ -89,49 +93,98 @@ public final class MaxMinImpl {
      * <li>Caso médio: 3n/2 - 2
      * </li>
      *
-     * @param vetor
+     * @param v
      * @return
+     */
+    /*
+     * public static int[] maxMin3(final Integer[] vetor, final int n) {
+     * // inicializa maximo e minimo como o valor do primeiro elemento do vetor
+     * int maximo;
+     * int minimo;
+     * int fimDoAnel;
+     * int i = 2;
+     * if ((n % 2) > 0) {// se n for par
+     * // vetor[n] = vetor[n - 1];
+     * fimDoAnel = n;
+     * } else {// se nao for par
+     * fimDoAnel = n - 1;
+     * }
+     * if (vetor[0] > vetor[1]) {// se o primeiro elemento for maior que o segundo
+     * maximo = vetor[0];
+     * minimo = vetor[1];
+     * } else {// se o primeiro elemento não for maior que o segundo
+     * maximo = vetor[1];
+     * minimo = vetor[0];
+     * }
+     * // varre o vetor fazendo as comparações
+     * while (i < fimDoAnel) {
+     * if (vetor[i] > vetor[i + 1]) {// se o elemento do vetor for maior que o proximo elemento
+     * if (vetor[i] > maximo) {// se este elemento for o maior
+     * maximo = vetor[i];
+     * }
+     * if (vetor[i + 1] < minimo) {
+     * minimo = vetor[i + 1];
+     * }
+     * } else {
+     * if (vetor[i] < minimo) {
+     * minimo = vetor[i];
+     * }
+     * if (vetor[i + 1] > maximo) {
+     * maximo = vetor[i + 1];
+     * }
+     * }
+     * i += 2;
+     * }
      */
     public static int[] maxMin3(final Integer[] vetor, final int n) {
 
+        final List<Integer> v = new ArrayList<>();
+        v.addAll(Arrays.asList(vetor));
         // inicializa maximo e minimo como o valor do primeiro elemento do vetor
         int maximo;
         int minimo;
         int fimDoAnel;
-        int i = 2;
+
+        if (n == 0) {
+            final int maxMin[] = new int[2];
+            return maxMin;
+        }
 
         if ((n % 2) > 0) {// se n for par
-            // vetor[n] = vetor[n - 1];
+            Integer h = v.get(n - 1);
+            v.add(h);
             fimDoAnel = n;
         } else {// se nao for par
             fimDoAnel = n - 1;
         }
 
-        if (vetor[0] > vetor[1]) {// se o primeiro elemento for maior que o segundo
-            maximo = vetor[0];
-            minimo = vetor[1];
+        if (v.get(0) > v.get(1)) {// se o primeiro elemento for maior que o segundo
+            maximo = v.get(0);
+            minimo = v.get(1);
         } else {// se o primeiro elemento não for maior que o segundo
-            maximo = vetor[1];
-            minimo = vetor[0];
+            maximo = v.get(1);
+            minimo = v.get(0);
         }
 
+        final int totalComp = 1;
+        int i = 2;
         // varre o vetor fazendo as comparações
         while (i < fimDoAnel) {
-            if (vetor[i] > vetor[i + 1]) {// se o elemento do vetor for maior que o proximo elemento
-                if (vetor[i] > maximo) {// se este elemento for o maior
-                    maximo = vetor[i];
+            if (v.get(i) > v.get(i + 1)) {// se o elemento do vetor for maior que o proximo elemento
+                if (v.get(i) > maximo) {// se este elemento for o maior
+                    maximo = v.get(i);
                 }
 
-                if (vetor[i + 1] < minimo) {
-                    minimo = vetor[i + 1];
+                if (v.get(i + 1) < minimo) {
+                    minimo = v.get(i + 1);
                 }
             } else {
-                if (vetor[i] < minimo) {
-                    minimo = vetor[i];
+                if (v.get(i) < minimo) {
+                    minimo = v.get(i);
                 }
 
-                if (vetor[i + 1] > maximo) {
-                    maximo = vetor[i + 1];
+                if (v.get(i + 1) > maximo) {
+                    maximo = v.get(i + 1);
                 }
             }
             i += 2;
