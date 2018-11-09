@@ -1,6 +1,8 @@
 package maxmin_ed2.util;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
@@ -13,16 +15,16 @@ public class MaxMinUtil {
      *
      * @return int[] array
      */
-    public static Integer[] arrayRandomico(final int tam) {
+    public static List<Integer> arrayRandomico(final int tam) {
 
-        final Integer[] array = new Integer[tam];
+        final List<Integer> array = new ArrayList<>();
 
         final Random rand = new Random();
         final int max = 99999999;
         final int min = 0;
         rand.nextInt(((max - min) + 1) + min);
         for (int i = 0; i < tam; i++) {
-            array[i] = rand.nextInt(((max - min) + 1) + min);
+            array.add(rand.nextInt(((max - min) + 1) + min));
         }
         return array;
     }

@@ -1,7 +1,8 @@
 package test;
 
-import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.testng.annotations.Test;
 
@@ -15,11 +16,14 @@ public class TesteMaxMin {
     // Define o tamanho do vetor
     static Integer tam = 10000000;
 
-    final static Integer[] vetor = MaxMinUtil.arrayRandomico(TesteMaxMin.tam);
+    final static List<Integer> vetor = MaxMinUtil.arrayRandomico(TesteMaxMin.tam);
 
-    final static Integer[] pior = Arrays.stream(TesteMaxMin.vetor).sorted(Comparator.reverseOrder()).toArray(Integer[]::new);
+    final static List<Integer> pior = TesteMaxMin.vetor.stream().sorted().collect(Collectors.toList());
 
-    final static Integer[] melhor = Arrays.stream(TesteMaxMin.vetor).sorted().toArray(Integer[]::new);
+    final static List<Integer> melhor = TesteMaxMin.vetor.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+    // final static Integer[] pior = Arrays.stream(TesteMaxMin.vetor).sorted(Comparator.reverseOrder()).toArray(Integer[]::new);
+
+    // final static Integer[] melhor = Arrays.stream(TesteMaxMin.vetor).sorted().toArray(Integer[]::new);
 
     @Test(invocationCount = TesteMaxMin.REPETICAO)
     public void min1Melhor() {
