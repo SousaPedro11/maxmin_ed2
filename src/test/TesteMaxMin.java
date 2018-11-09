@@ -10,10 +10,10 @@ import maxmin_ed2.util.MaxMinUtil;
 
 public class TesteMaxMin {
 
-    static final int REPETICAO = 1;
+    static final int REPETICAO = 3;
 
     // Define o tamanho do vetor
-    static Integer tam = 15;
+    static Integer tam = 10000000;
 
     final static Integer[] vetor = MaxMinUtil.arrayRandomico(TesteMaxMin.tam);
 
