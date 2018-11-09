@@ -19,24 +19,24 @@ public final class MaxMinImpl {
      * <li>Caso médio: 2(n-1)
      * </li>
      *
-     * @param vetor
+     * @param lista
      * @return [max,min]
      */
-    public static int[] maxMin1(final List<Integer> vetor, final int n) {
+    public static int[] maxMin1(final List<Integer> lista, final int n) {
 
-        final List<Integer> vetorAux = new ArrayList<>(vetor);
+        final List<Integer> listaAux = new ArrayList<>(lista);
 
-        // inicializa max e min como o valor do primeiro elemento do vetor
-        int maximo = vetorAux.get(0);
-        int minimo = vetorAux.get(0);
+        // inicializa max e min como o valor do primeiro elemento da lista
+        int maximo = listaAux.get(0);
+        int minimo = listaAux.get(0);
 
-        // varre o vetor fazendo as comparações
+        // varre a lista fazendo as comparações
         for (int i = 1; i < n; i++) {
-            if (vetorAux.get(i) > maximo) {// se o elemento na posicao i do vetor for maior que a variavel maximo, esta assume o valor do elemento
-                maximo = vetorAux.get(i);
+            if (listaAux.get(i) > maximo) {// se o elemento na posicao i da lista for maior que a variavel maximo, esta assume o valor do elemento
+                maximo = listaAux.get(i);
             }
-            if (vetorAux.get(i) < minimo) {// se o elemento na posicao i do vetor for menor que a variavel minimo, esta assume o valor do elemento
-                minimo = vetorAux.get(i);
+            if (listaAux.get(i) < minimo) {// se o elemento na posicao i da lista for menor que a variavel minimo, esta assume o valor do elemento
+                minimo = listaAux.get(i);
             }
         }
 
@@ -58,25 +58,24 @@ public final class MaxMinImpl {
      * <li>Caso médio: 3n/2 - 3/2
      * </li>
      *
-     * @param vetor
+     * @param lista
      * @return [max,min]
      */
-    public static int[] maxMin2(final List<Integer> vetor, final int n) {
+    public static int[] maxMin2(final List<Integer> lista, final int n) {
 
-        final List<Integer> vetorAux = new ArrayList<>(vetor);
+        final List<Integer> listaAux = new ArrayList<>(lista);
 
-        // inicializa max e min como o valor do primeiro elemento do vetor
-        int maximo = vetorAux.get(0);
-        int minimo = vetorAux.get(0);
+        // inicializa max e min como o valor do primeiro elemento da lista
+        int maximo = listaAux.get(0);
+        int minimo = listaAux.get(0);
 
-        // varre o vetor fazendo as comparações
+        // varre a lista fazendo as comparações
         for (int i = 1; i < n; i++) {
-            if (vetorAux.get(i) > maximo) {// se o elemento na posicao i do vetor for maior que a variavel maximo, esta assume o valor do elemento
-                maximo = vetorAux.get(i);
-            } else if (vetorAux.get(i) < minimo) {// senao, se o elemento na posicao i do vetor for menor que a variavel minimo, esta assume o valor
-                                                  // do
-                // elemento
-                minimo = vetorAux.get(i);
+            if (listaAux.get(i) > maximo) {// se o elemento na posicao i da lista for maior que a variavel maximo, esta assume o valor do elemento
+                maximo = listaAux.get(i);
+            } else if (listaAux.get(i) < minimo) {// senao, se o elemento na posicao i da lista for menor que a variavel minimo, esta assume o valor
+                                                  // do elemento
+                minimo = listaAux.get(i);
             }
         }
 
@@ -98,51 +97,51 @@ public final class MaxMinImpl {
      * <li>Caso médio: 3n/2 - 2
      * </li>
      *
-     * @param vetor
+     * @param lista
      * @return [max,min]
      */
-    public static int[] maxMin3(final List<Integer> vetor, final int n) {
+    public static int[] maxMin3(final List<Integer> lista, final int n) {
 
-        final List<Integer> vetorAux = new ArrayList<>(vetor);
+        final List<Integer> listaAux = new ArrayList<>(lista);
 
-        // inicializa maximo e minimo como o valor do primeiro elemento do vetor
+        // inicializa maximo e minimo como o valor do primeiro elemento da lista
         int maximo;
         int minimo;
         int fimDoAnel;
 
         if ((n % 2) > 0) {// se n for par
-            vetorAux.add(vetorAux.get(n - 1));
+            listaAux.add(listaAux.get(n - 1));
             fimDoAnel = n;
         } else {// se nao for par
             fimDoAnel = n - 1;
         }
 
-        if (vetorAux.get(0) > vetorAux.get(1)) {// se o primeiro elemento for maior que o segundo
-            maximo = vetorAux.get(0);
-            minimo = vetorAux.get(1);
+        if (listaAux.get(0) > listaAux.get(1)) {// se o primeiro elemento for maior que o segundo
+            maximo = listaAux.get(0);
+            minimo = listaAux.get(1);
         } else {// se o primeiro elemento não for maior que o segundo
-            maximo = vetorAux.get(1);
-            minimo = vetorAux.get(0);
+            maximo = listaAux.get(1);
+            minimo = listaAux.get(0);
         }
 
         int i = 2;
-        // varre o vetor fazendo as comparações
+        // varre a lista fazendo as comparações
         while (i < fimDoAnel) {
-            if (vetorAux.get(i) > vetorAux.get(i + 1)) {// se o elemento do vetor for maior que o proximo elemento
-                if (vetorAux.get(i) > maximo) {// se este elemento for o maior
-                    maximo = vetorAux.get(i);
+            if (listaAux.get(i) > listaAux.get(i + 1)) {// se o elemento da lista for maior que o proximo elemento
+                if (listaAux.get(i) > maximo) {// se este elemento for o maior
+                    maximo = listaAux.get(i);
                 }
 
-                if (vetorAux.get(i + 1) < minimo) {
-                    minimo = vetorAux.get(i + 1);
+                if (listaAux.get(i + 1) < minimo) {
+                    minimo = listaAux.get(i + 1);
                 }
             } else {
-                if (vetorAux.get(i) < minimo) {
-                    minimo = vetorAux.get(i);
+                if (listaAux.get(i) < minimo) {
+                    minimo = listaAux.get(i);
                 }
 
-                if (vetorAux.get(i + 1) > maximo) {
-                    maximo = vetorAux.get(i + 1);
+                if (listaAux.get(i + 1) > maximo) {
+                    maximo = listaAux.get(i + 1);
                 }
             }
             i += 2;
