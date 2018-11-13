@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37" started-at="2018-11-13T14:42:43Z" finished-at="2018-11-13T14:42:43Z">
+  <suite name="Default suite" duration-ms="130" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37" started-at="2018-11-13T14:42:43Z" finished-at="2018-11-13T14:42:43Z">
-      <class name="test.TesteGulosoTroco">
-        <test-method status="PASS" signature="pagamentoInteiroMaior()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoInteiroMaior" duration-ms="10" started-at="2018-11-13T14:42:43Z" finished-at="2018-11-13T14:42:43Z">
+    <test name="Default test" duration-ms="130" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
+      <class name="test.TesteVizinhoProximo">
+        <test-method status="PASS" signature="TSPMenorRota()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="TSPMenorRota" duration-ms="87" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pagamentoInteiroMaior -->
-        <test-method status="PASS" signature="pagamentoFracionadoMaior()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoFracionadoMaior" duration-ms="2" started-at="2018-11-13T14:42:43Z" depends-on-methods="test.TesteGulosoTroco.pagamentoInteiroMaior" finished-at="2018-11-13T14:42:43Z">
+        </test-method> <!-- TSPMenorRota -->
+        <test-method status="PASS" signature="rotaAcara()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaAcara" duration-ms="3" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pagamentoFracionadoMaior -->
-        <test-method status="PASS" signature="pagamentoFracionadoMaior1()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoFracionadoMaior1" duration-ms="1" started-at="2018-11-13T14:42:43Z" depends-on-methods="test.TesteGulosoTroco.pagamentoInteiroMaior" finished-at="2018-11-13T14:42:43Z">
+        </test-method> <!-- rotaAcara -->
+        <test-method status="PASS" signature="rotaBelém()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaBelém" duration-ms="4" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pagamentoFracionadoMaior1 -->
-        <test-method status="PASS" signature="pagamentoIgual()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoIgual" duration-ms="1" started-at="2018-11-13T14:42:43Z" depends-on-methods="test.TesteGulosoTroco.pagamentoFracionadoMaior" finished-at="2018-11-13T14:42:43Z">
+        </test-method> <!-- rotaBelém -->
+        <test-method status="PASS" signature="rotaGaranhuns()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaGaranhuns" duration-ms="6" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pagamentoIgual -->
-        <test-method status="PASS" signature="pagamentoMenor()[pri:0, instance:test.TesteGulosoTroco@5cc7c2a6]" name="pagamentoMenor" duration-ms="1" started-at="2018-11-13T14:42:43Z" depends-on-methods="test.TesteGulosoTroco.pagamentoIgual" finished-at="2018-11-13T14:42:43Z">
+        </test-method> <!-- rotaGaranhuns -->
+        <test-method status="PASS" signature="rotaMarituba()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaMarituba" duration-ms="3" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pagamentoMenor -->
-      </class> <!-- test.TesteGulosoTroco -->
+        </test-method> <!-- rotaMarituba -->
+        <test-method status="PASS" signature="rotaSalvador()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaSalvador" duration-ms="2" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rotaSalvador -->
+      </class> <!-- test.TesteVizinhoProximo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
