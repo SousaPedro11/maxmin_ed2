@@ -14,7 +14,7 @@ public class TesteGulosoTroco {
     private void pagamentoInteiroMaior() {
 
         this.valorConta = 100;
-        this.valorPago = 105;
+        this.valorPago = 108;
 
         System.out.println("1 - Teste pagamentoInteiroMaior");
         System.out.println(GulosoTrocoImpl.calculaTroco(this.valorConta, this.valorPago));
