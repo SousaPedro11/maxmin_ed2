@@ -1,37 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="72" total="99" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="130" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
+  <suite name="maxmin" duration-ms="4167" started-at="2018-11-13T14:51:06Z" finished-at="2018-11-13T14:51:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="130" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
-      <class name="test.TesteVizinhoProximo">
-        <test-method status="PASS" signature="TSPMenorRota()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="TSPMenorRota" duration-ms="87" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
+    <test name="maxMin1Melhor" duration-ms="633" started-at="2018-11-13T14:51:06Z" finished-at="2018-11-13T14:51:06Z">
+      <class name="test.TesteMaxMin">
+        <test-method status="PASS" signature="min1Melhor()[pri:0, instance:test.TesteMaxMin@3bfdc050]" name="min1Melhor" duration-ms="188" started-at="2018-11-13T14:51:06Z" finished-at="2018-11-13T14:51:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TSPMenorRota -->
-        <test-method status="PASS" signature="rotaAcara()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaAcara" duration-ms="3" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
+        </test-method> <!-- min1Melhor -->
+        <test-method status="PASS" signature="min1Melhor()[pri:0, instance:test.TesteMaxMin@3bfdc050]" name="min1Melhor" duration-ms="170" started-at="2018-11-13T14:51:06Z" finished-at="2018-11-13T14:51:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rotaAcara -->
-        <test-method status="PASS" signature="rotaBelém()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaBelém" duration-ms="4" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
+        </test-method> <!-- min1Melhor -->
+        <test-method status="PASS" signature="min1Melhor()[pri:0, instance:test.TesteMaxMin@3bfdc050]" name="min1Melhor" duration-ms="256" started-at="2018-11-13T14:51:06Z" finished-at="2018-11-13T14:51:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rotaBelém -->
-        <test-method status="PASS" signature="rotaGaranhuns()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaGaranhuns" duration-ms="6" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
+        </test-method> <!-- min1Melhor -->
+      </class> <!-- test.TesteMaxMin -->
+    </test> <!-- maxMin1Melhor -->
+    <test name="maxMin2Melhor" duration-ms="527" started-at="2018-11-13T14:51:06Z" finished-at="2018-11-13T14:51:07Z">
+      <class name="test.TesteMaxMin">
+        <test-method status="PASS" signature="min2Melhor()[pri:0, instance:test.TesteMaxMin@4f7d0008]" name="min2Melhor" duration-ms="186" started-at="2018-11-13T14:51:06Z" finished-at="2018-11-13T14:51:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rotaGaranhuns -->
-        <test-method status="PASS" signature="rotaMarituba()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaMarituba" duration-ms="3" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
+        </test-method> <!-- min2Melhor -->
+        <test-method status="PASS" signature="min2Melhor()[pri:0, instance:test.TesteMaxMin@4f7d0008]" name="min2Melhor" duration-ms="173" started-at="2018-11-13T14:51:06Z" finished-at="2018-11-13T14:51:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rotaMarituba -->
-        <test-method status="PASS" signature="rotaSalvador()[pri:0, instance:test.TesteVizinhoProximo@b97c004]" name="rotaSalvador" duration-ms="2" started-at="2018-11-13T14:50:09Z" finished-at="2018-11-13T14:50:09Z">
+        </test-method> <!-- min2Melhor -->
+        <test-method status="PASS" signature="min2Melhor()[pri:0, instance:test.TesteMaxMin@4f7d0008]" name="min2Melhor" duration-ms="164" started-at="2018-11-13T14:51:07Z" finished-at="2018-11-13T14:51:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rotaSalvador -->
-      </class> <!-- test.TesteVizinhoProximo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- min2Melhor -->
+      </class> <!-- test.TesteMaxMin -->
+    </test> <!-- maxMin2Melhor -->
+    <test name="maxMin3Melhor" duration-ms="649" started-at="2018-11-13T14:51:07Z" finished-at="2018-11-13T14:51:07Z">
+      <class name="test.TesteMaxMin">
+        <test-method status="PASS" signature="min3Melhor()[pri:0, instance:test.TesteMaxMin@4cf777e8]" name="min3Melhor" duration-ms="295" started-at="2018-11-13T14:51:07Z" finished-at="2018-11-13T14:51:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3Melhor -->
+        <test-method status="PASS" signature="min3Melhor()[pri:0, instance:test.TesteMaxMin@4cf777e8]" name="min3Melhor" duration-ms="182" started-at="2018-11-13T14:51:07Z" finished-at="2018-11-13T14:51:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3Melhor -->
+        <test-method status="PASS" signature="min3Melhor()[pri:0, instance:test.TesteMaxMin@4cf777e8]" name="min3Melhor" duration-ms="170" started-at="2018-11-13T14:51:07Z" finished-at="2018-11-13T14:51:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3Melhor -->
+      </class> <!-- test.TesteMaxMin -->
+    </test> <!-- maxMin3Melhor -->
+    <test name="maxMin1" duration-ms="212" started-at="2018-11-13T14:51:07Z" finished-at="2018-11-13T14:51:08Z">
+      <class name="test.TesteMaxMin">
+        <test-method status="PASS" signature="min1()[pri:0, instance:test.TesteMaxMin@6fd02e5]" name="min1" duration-ms="43" started-at="2018-11-13T14:51:07Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1 -->
+        <test-method status="PASS" signature="min1()[pri:0, instance:test.TesteMaxMin@6fd02e5]" name="min1" duration-ms="131" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1 -->
+        <test-method status="PASS" signature="min1()[pri:0, instance:test.TesteMaxMin@6fd02e5]" name="min1" duration-ms="37" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1 -->
+      </class> <!-- test.TesteMaxMin -->
+    </test> <!-- maxMin1 -->
+    <test name="maxMin2" duration-ms="215" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+      <class name="test.TesteMaxMin">
+        <test-method status="PASS" signature="min2()[pri:0, instance:test.TesteMaxMin@490ab905]" name="min2" duration-ms="43" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2 -->
+        <test-method status="PASS" signature="min2()[pri:0, instance:test.TesteMaxMin@490ab905]" name="min2" duration-ms="38" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2 -->
+        <test-method status="PASS" signature="min2()[pri:0, instance:test.TesteMaxMin@490ab905]" name="min2" duration-ms="133" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2 -->
+      </class> <!-- test.TesteMaxMin -->
+    </test> <!-- maxMin2 -->
+    <test name="maxMin3" duration-ms="182" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+      <class name="test.TesteMaxMin">
+        <test-method status="PASS" signature="min3()[pri:0, instance:test.TesteMaxMin@5cb9f472]" name="min3" duration-ms="65" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3 -->
+        <test-method status="PASS" signature="min3()[pri:0, instance:test.TesteMaxMin@5cb9f472]" name="min3" duration-ms="58" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3 -->
+        <test-method status="PASS" signature="min3()[pri:0, instance:test.TesteMaxMin@5cb9f472]" name="min3" duration-ms="57" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3 -->
+      </class> <!-- test.TesteMaxMin -->
+    </test> <!-- maxMin3 -->
+    <test name="maxMin1Pior" duration-ms="608" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:09Z">
+      <class name="test.TesteMaxMin">
+        <test-method status="PASS" signature="min1Pior()[pri:0, instance:test.TesteMaxMin@25bbe1b6]" name="min1Pior" duration-ms="280" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1Pior -->
+        <test-method status="PASS" signature="min1Pior()[pri:0, instance:test.TesteMaxMin@25bbe1b6]" name="min1Pior" duration-ms="163" started-at="2018-11-13T14:51:08Z" finished-at="2018-11-13T14:51:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1Pior -->
+        <test-method status="PASS" signature="min1Pior()[pri:0, instance:test.TesteMaxMin@25bbe1b6]" name="min1Pior" duration-ms="161" started-at="2018-11-13T14:51:09Z" finished-at="2018-11-13T14:51:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min1Pior -->
+      </class> <!-- test.TesteMaxMin -->
+    </test> <!-- maxMin1Pior -->
+    <test name="maxMin2Pior" duration-ms="582" started-at="2018-11-13T14:51:09Z" finished-at="2018-11-13T14:51:09Z">
+      <class name="test.TesteMaxMin">
+        <test-method status="PASS" signature="min2Pior()[pri:0, instance:test.TesteMaxMin@29ca901e]" name="min2Pior" duration-ms="162" started-at="2018-11-13T14:51:09Z" finished-at="2018-11-13T14:51:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2Pior -->
+        <test-method status="PASS" signature="min2Pior()[pri:0, instance:test.TesteMaxMin@29ca901e]" name="min2Pior" duration-ms="164" started-at="2018-11-13T14:51:09Z" finished-at="2018-11-13T14:51:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2Pior -->
+        <test-method status="PASS" signature="min2Pior()[pri:0, instance:test.TesteMaxMin@29ca901e]" name="min2Pior" duration-ms="253" started-at="2018-11-13T14:51:09Z" finished-at="2018-11-13T14:51:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min2Pior -->
+      </class> <!-- test.TesteMaxMin -->
+    </test> <!-- maxMin2Pior -->
+    <test name="maxMin3Pior" duration-ms="495" started-at="2018-11-13T14:51:09Z" finished-at="2018-11-13T14:51:10Z">
+      <class name="test.TesteMaxMin">
+        <test-method status="PASS" signature="min3Pior()[pri:0, instance:test.TesteMaxMin@192b07fd]" name="min3Pior" duration-ms="164" started-at="2018-11-13T14:51:09Z" finished-at="2018-11-13T14:51:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3Pior -->
+        <test-method status="PASS" signature="min3Pior()[pri:0, instance:test.TesteMaxMin@192b07fd]" name="min3Pior" duration-ms="164" started-at="2018-11-13T14:51:09Z" finished-at="2018-11-13T14:51:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3Pior -->
+        <test-method status="PASS" signature="min3Pior()[pri:0, instance:test.TesteMaxMin@192b07fd]" name="min3Pior" duration-ms="164" started-at="2018-11-13T14:51:10Z" finished-at="2018-11-13T14:51:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min3Pior -->
+      </class> <!-- test.TesteMaxMin -->
+    </test> <!-- maxMin3Pior -->
+  </suite> <!-- maxmin -->
 </testng-results>
